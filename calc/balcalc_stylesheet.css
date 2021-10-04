@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+td {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	padding: 5px 10px 5px 10px;
+	text-align:right;
+}
+th {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	text-align:center;
+	padding:5px 10px 5px 10px;
+}
+tr.odd {
+	background-color:#EEE;
+}
+tr.even {
+	background-color:#FFF;
+}
+table.left-align td {
+	text-align:left;
+}
+td.error {
+	color:#F00;
+	text-align:left;
+}
+.show-more-bullets {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;	
+	color:#00F;
+	cursor:pointer;
+}
+table.balcalc-results {
+	border:1px solid #333;
+	border-collapse:collapse;
+}
+table.balcalc-results th {
+	border:1px solid #333;
+}
+.bullet-legend {
+	width:30px;
+	text-align:center;
+	margin-right:10px;
+	padding-left:20px;
+	padding-right:20px;
+	font-family:"Courier New", Courier, monospace;
+}

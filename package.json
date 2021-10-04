@@ -1,0 +1,24 @@
+{
+  "name": "sniperx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orensrauch/sniperx.git"
+  },
+  "keywords": [
+    "javascript",
+    "ballistic",
+    "calculator"
+  ],
+  "author": "Gadi Chevah, Oren Rauch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/orensrauch/sniperx/issues"
+  },
+  "homepage": "https://github.com/orensrauch/sniperx#readme"
+}

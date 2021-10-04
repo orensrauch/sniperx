@@ -1,0 +1,2215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ballistic Calculator GunData.org</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description"
+        content="Thanks for using the external ballistic calculator from GunData.org that accurately details all aspects of the bullets trajectory the millisecond it leaves the guns barrel.">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link href="http://gundata.org/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://gundata.org/css/coin-slider.css">
+    <link rel="stylesheet" type="text/css" href="http://gundata.org/lib/fancybox/source/jquery.fancybox.css"
+        media="screen">
+    <iframe id="pxcelframe"
+        src="//t.sharethis.com/a/t_.htm?ver=1.671.22322&amp;cid=c010#rnd=1633343634589&amp;cid=c010&amp;dmn=gundata.org&amp;gdpr_domain=false&amp;tt=t.dhj&amp;dhjLcy=49&amp;lbl=pxcel&amp;flbl=pxcel&amp;ll=d&amp;ver=1.671.22322&amp;ell=d&amp;cck=__stid&amp;pn=%2Fballistic-calculator%2F&amp;qs=na&amp;rdn=www.google.com&amp;rpn=%2F&amp;rqs=na&amp;cc=IL&amp;cont=AS&amp;ipaddr="
+        style="display: none;"></iframe>
+    <script
+        src="https://partner.googleadservices.com/gampad/cookie.js?domain=gundata.org&amp;callback=_gfp_s_&amp;client=ca-pub-8417283882784443&amp;cookie=ID%3D10a27c7aa708449b-2259e18608cc008d%3AT%3D1633004559%3ART%3D1633004559%3AS%3DALNI_MYiZWSf9px_q5pWbnSBs2A14uxipQ"></script>
+    <script src="https://connect.facebook.net/en_US/sdk.js?hash=4cf06b69b4c1130ce1536437c20f5887" async=""
+        crossorigin="anonymous"></script>
+    <script
+        src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202109270101/show_ads_impl_fy2019.js?bust=31062977"
+        id="google_shimpl"></script>
+    <script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.0"></script>
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript" id="async-buttons" src="https://ws.sharethis.com/button/async-buttons.js"></script>
+    <script type="text/javascript" src="http://gundata.org/js/cufon-yui.js"></script>
+    <style type="text/css">
+        cufon {
+            text-indent: 0 !important;
+        }
+
+        @media screen,
+        projection {
+            cufon {
+                display: inline !important;
+                display: inline-block !important;
+                position: relative !important;
+                vertical-align: middle !important;
+                font-size: 1px !important;
+                line-height: 1px !important;
+            }
+
+            cufon cufontext {
+                display: -moz-inline-box !important;
+                display: inline-block !important;
+                width: 0 !important;
+                height: 0 !important;
+                overflow: hidden !important;
+                text-indent: -10000in !important;
+            }
+
+            cufon canvas {
+                position: relative !important;
+            }
+        }
+
+        @media print {
+            cufon {
+                padding: 0 !important;
+            }
+
+            cufon canvas {
+                display: none !important;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="http://gundata.org/js/cufon-libsans.js"></script>
+    <script type="text/javascript" src="http://gundata.org/js/jquery-min.js"></script>
+    <script type="text/javascript" src="http://gundata.org/js/script.js?v=1"></script>
+    <script type="text/javascript" src="http://gundata.org/js/coin-slider.min.js"></script>
+    <script type="text/javascript" src="http://gundata.org/lib/fancybox/source/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="http://gundata.org/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="http://gundata.org/js/custom.js"></script>
+    <script type="text/javascript">var switchTo5x = true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({ publisher: "aaa3d8d8-a8bf-45d7-822b-caf62caf9e0f" });</script>
+    <!-- CuFon ends -->
+
+    <!--- added analytics back 3-31-2021--->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-943460-84']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <script type="text/javascript" async="" src="http://s3.buysellads.com/ac/bsa.js"></script>
+    <meta http-equiv="origin-trial"
+        content="A88otRz1Fd3Nt567e2IYshC18LL3KGVXpVJW9oTCId4RYaygt23pbb4JqrbdIO/bwZPWEmRjBIRBu/bZbDR7Pg4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+    <meta http-equiv="origin-trial"
+        content="A0gCLbXCcL0R1Oc8tFPDs0G4Elz17w3zHp+Zst66+D17veE2o7fUcPsA114QtSTRqfVJLMeTSdeWOom0CcyCsgYAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <meta http-equiv="origin-trial"
+        content="A9RQ+LxFazAousxUwSCzaihJjHLO1UyjQp0teZKHl7WdbVjPDfHSKMd6D/ZI5MTjqClFycbl70EFd7cBJWXqKQEAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <meta http-equiv="origin-trial"
+        content="A6WKeWsdn1Ct+ZPqS9NCxxaiBoQ7wdTkK2/gE69Yu0gfBKJfo1gOvgkGmf5/xaIajT/RUb9AbnF1FsSZ47cCcQcAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <meta http-equiv="origin-trial"
+        content="A04ZCu7yjrHgwQJK5ISHhH1DSg0qqowEay3n70KO6wV3D2Mj+OX3Kw20aSMitzgdG1xfrN7sOJV/dZIk+RvCzA4AAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjM0MDgzMTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+    <meta http-equiv="origin-trial"
+        content="A2YAd4xOntTGygIDjApOTtXOgVI3IWsd5OnOGq3RbRkIQwyqYWNl1JGRAcvtm6VOHDj4n07T/J19VqLuJn3MmQ8AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9">
+    <meta http-equiv="origin-trial"
+        content="A2c5Ux+hivdkLh/KbZUGr6f7SCR0mZrBVfPJ+/OuDVHNwiYv+Lo83b9z5qL8sod78bQl0pSLtbvRWURo+xRl7AIAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9">
+    <meta http-equiv="origin-trial"
+        content="AzNJ4sd3tVurolpdvWYZ4cmP9Po7RJhEHSqmC3pgxW9fFVZvchhtcMUgHAs97npxMD1jhXHO8s6q6Wy1MMLxKgEAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9">
+    <meta http-equiv="origin-trial"
+        content="A88otRz1Fd3Nt567e2IYshC18LL3KGVXpVJW9oTCId4RYaygt23pbb4JqrbdIO/bwZPWEmRjBIRBu/bZbDR7Pg4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+    <meta http-equiv="origin-trial"
+        content="A0gCLbXCcL0R1Oc8tFPDs0G4Elz17w3zHp+Zst66+D17veE2o7fUcPsA114QtSTRqfVJLMeTSdeWOom0CcyCsgYAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <meta http-equiv="origin-trial"
+        content="A9RQ+LxFazAousxUwSCzaihJjHLO1UyjQp0teZKHl7WdbVjPDfHSKMd6D/ZI5MTjqClFycbl70EFd7cBJWXqKQEAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <meta http-equiv="origin-trial"
+        content="A6WKeWsdn1Ct+ZPqS9NCxxaiBoQ7wdTkK2/gE69Yu0gfBKJfo1gOvgkGmf5/xaIajT/RUb9AbnF1FsSZ47cCcQcAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <meta http-equiv="origin-trial"
+        content="A04ZCu7yjrHgwQJK5ISHhH1DSg0qqowEay3n70KO6wV3D2Mj+OX3Kw20aSMitzgdG1xfrN7sOJV/dZIk+RvCzA4AAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjM0MDgzMTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+    <meta http-equiv="origin-trial"
+        content="A2YAd4xOntTGygIDjApOTtXOgVI3IWsd5OnOGq3RbRkIQwyqYWNl1JGRAcvtm6VOHDj4n07T/J19VqLuJn3MmQ8AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9">
+    <meta http-equiv="origin-trial"
+        content="A2c5Ux+hivdkLh/KbZUGr6f7SCR0mZrBVfPJ+/OuDVHNwiYv+Lo83b9z5qL8sod78bQl0pSLtbvRWURo+xRl7AIAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9">
+    <meta http-equiv="origin-trial"
+        content="AzNJ4sd3tVurolpdvWYZ4cmP9Po7RJhEHSqmC3pgxW9fFVZvchhtcMUgHAs97npxMD1jhXHO8s6q6Wy1MMLxKgEAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9">
+    <link rel="stylesheet" type="text/css" href="https://ws.sharethis.com/button/css/buttons-secure.css">
+    <script type="text/javascript"
+        src="https://count-server.sharethis.com/v2.0/get_counts?url=http%3A%2F%2Fgundata.org%2Fballistic-calculator%2F&amp;cb=stButtons.processCB&amp;wd=true"></script>
+    <script type="text/javascript" id="_bsap_js_9b7f7f757d4f1abfb6735a60bd796f34"
+        src="//s3.buysellads.com/r/s_9b7f7f757d4f1abfb6735a60bd796f34.js?v=1633341600000" async="async"></script>
+    <link rel="preload" href="https://adservice.google.co.il/adsid/integrator.js?domain=gundata.org" as="script">
+    <script type="text/javascript" src="https://adservice.google.co.il/adsid/integrator.js?domain=gundata.org"></script>
+    <link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=gundata.org" as="script">
+    <script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=gundata.org"></script>
+    <script type="text/javascript" src="//s3.buysellads.com/ac/pro.js" id="_bsap_premium_pro"></script>
+    <script type="text/javascript" id="_bsaPRO_js"
+        src="//srv.buysellads.com/ads/get/ids/CYSDPKE;CYSDPKV/?r=1633341600000" async="async"></script>
+    <style type="text/css"
+        data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">
+        .fb_hidden {
+            position: absolute;
+            top: -10000px;
+            z-index: 10001
+        }
+
+        .fb_reposition {
+            overflow: hidden;
+            position: relative
+        }
+
+        .fb_invisible {
+            display: none
+        }
+
+        .fb_reset {
+            background: none;
+            border: 0;
+            border-spacing: 0;
+            color: #000;
+            cursor: auto;
+            direction: ltr;
+            font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+            font-size: 11px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            letter-spacing: normal;
+            line-height: 1;
+            margin: 0;
+            overflow: visible;
+            padding: 0;
+            text-align: left;
+            text-decoration: none;
+            text-indent: 0;
+            text-shadow: none;
+            text-transform: none;
+            visibility: visible;
+            white-space: normal;
+            word-spacing: normal
+        }
+
+        .fb_reset>div {
+            overflow: hidden
+        }
+
+        @keyframes fb_transform {
+            from {
+                opacity: 0;
+                transform: scale(.95)
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1)
+            }
+        }
+
+        .fb_animate {
+            animation: fb_transform .3s forwards
+        }
+
+        .fb_dialog {
+            background: rgba(82, 82, 82, .7);
+            position: absolute;
+            top: -10000px;
+            z-index: 10001
+        }
+
+        .fb_dialog_advanced {
+            border-radius: 8px;
+            padding: 10px
+        }
+
+        .fb_dialog_content {
+            background: #fff;
+            color: #373737
+        }
+
+        .fb_dialog_close_icon {
+            background: url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;
+            cursor: pointer;
+            display: block;
+            height: 15px;
+            position: absolute;
+            right: 18px;
+            top: 17px;
+            width: 15px
+        }
+
+        .fb_dialog_mobile .fb_dialog_close_icon {
+            left: 5px;
+            right: auto;
+            top: 5px
+        }
+
+        .fb_dialog_padding {
+            background-color: transparent;
+            position: absolute;
+            width: 1px;
+            z-index: -1
+        }
+
+        .fb_dialog_close_icon:hover {
+            background: url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent
+        }
+
+        .fb_dialog_close_icon:active {
+            background: url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent
+        }
+
+        .fb_dialog_iframe {
+            line-height: 0
+        }
+
+        .fb_dialog_content .dialog_title {
+            background: #6d84b4;
+            border: 1px solid #365899;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0
+        }
+
+        .fb_dialog_content .dialog_title>span {
+            background: url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;
+            float: left;
+            padding: 5px 0 7px 26px
+        }
+
+        body.fb_hidden {
+            height: 100%;
+            left: 0;
+            margin: 0;
+            overflow: visible;
+            position: absolute;
+            top: -10000px;
+            transform: none;
+            width: 100%
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading {
+            background: url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;
+            min-height: 100%;
+            min-width: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            z-index: 10001
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading.centered {
+            background: none;
+            height: auto;
+            min-height: initial;
+            min-width: initial;
+            width: auto
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner {
+            width: 100%
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content {
+            background: none
+        }
+
+        .loading.centered #fb_dialog_loader_close {
+            clear: both;
+            color: #fff;
+            display: block;
+            font-size: 18px;
+            padding-top: 20px
+        }
+
+        #fb-root #fb_dialog_ipad_overlay {
+            background: rgba(0, 0, 0, .4);
+            bottom: 0;
+            left: 0;
+            min-height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            z-index: 10000
+        }
+
+        #fb-root #fb_dialog_ipad_overlay.hidden {
+            display: none
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading iframe {
+            visibility: hidden
+        }
+
+        .fb_dialog_mobile .fb_dialog_iframe {
+            position: sticky;
+            top: 0
+        }
+
+        .fb_dialog_content .dialog_header {
+            background: linear-gradient(from(#738aba), to(#2c4987));
+            border-bottom: 1px solid;
+            border-color: #043b87;
+            box-shadow: white 0 1px 1px -1px inset;
+            color: #fff;
+            font: bold 14px Helvetica, sans-serif;
+            text-overflow: ellipsis;
+            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
+            vertical-align: middle;
+            white-space: nowrap
+        }
+
+        .fb_dialog_content .dialog_header table {
+            height: 43px;
+            width: 100%
+        }
+
+        .fb_dialog_content .dialog_header td.header_left {
+            font-size: 12px;
+            padding-left: 5px;
+            vertical-align: middle;
+            width: 60px
+        }
+
+        .fb_dialog_content .dialog_header td.header_right {
+            font-size: 12px;
+            padding-right: 5px;
+            vertical-align: middle;
+            width: 60px
+        }
+
+        .fb_dialog_content .touchable_button {
+            background: linear-gradient(from(#4267B2), to(#2a4887));
+            background-clip: padding-box;
+            border: 1px solid #29487d;
+            border-radius: 3px;
+            display: inline-block;
+            line-height: 18px;
+            margin-top: 3px;
+            max-width: 85px;
+            padding: 4px 12px;
+            position: relative
+        }
+
+        .fb_dialog_content .dialog_header .touchable_button input {
+            background: none;
+            border: none;
+            color: #fff;
+            font: bold 12px Helvetica, sans-serif;
+            margin: 2px -12px;
+            padding: 2px 6px 3px 6px;
+            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
+        }
+
+        .fb_dialog_content .dialog_header .header_center {
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 18px;
+            text-align: center;
+            vertical-align: middle
+        }
+
+        .fb_dialog_content .dialog_content {
+            background: url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;
+            border: 1px solid #4a4a4a;
+            border-bottom: 0;
+            border-top: 0;
+            height: 150px
+        }
+
+        .fb_dialog_content .dialog_footer {
+            background: #f5f6f7;
+            border: 1px solid #4a4a4a;
+            border-top-color: #ccc;
+            height: 40px
+        }
+
+        #fb_dialog_loader_close {
+            float: left
+        }
+
+        .fb_dialog.fb_dialog_mobile .fb_dialog_close_icon {
+            visibility: hidden
+        }
+
+        #fb_dialog_loader_spinner {
+            animation: rotateSpinner 1.2s linear infinite;
+            background-color: transparent;
+            background-image: url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            height: 24px;
+            width: 24px
+        }
+
+        @keyframes rotateSpinner {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        .fb_iframe_widget {
+            display: inline-block;
+            position: relative
+        }
+
+        .fb_iframe_widget span {
+            display: inline-block;
+            position: relative;
+            text-align: justify
+        }
+
+        .fb_iframe_widget iframe {
+            position: absolute
+        }
+
+        .fb_iframe_widget_fluid_desktop,
+        .fb_iframe_widget_fluid_desktop span,
+        .fb_iframe_widget_fluid_desktop iframe {
+            max-width: 100%
+        }
+
+        .fb_iframe_widget_fluid_desktop iframe {
+            min-width: 220px;
+            position: relative
+        }
+
+        .fb_iframe_widget_lift {
+            z-index: 1
+        }
+
+        .fb_iframe_widget_fluid {
+            display: inline
+        }
+
+        .fb_iframe_widget_fluid span {
+            width: 100%
+        }
+
+        .fb_mpn_mobile_landing_page_slide_out {
+            animation-duration: 200ms;
+            animation-name: fb_mpn_landing_page_slide_out;
+            transition-timing-function: ease-in
+        }
+
+        .fb_mpn_mobile_landing_page_slide_out_from_left {
+            animation-duration: 200ms;
+            animation-name: fb_mpn_landing_page_slide_out_from_left;
+            transition-timing-function: ease-in
+        }
+
+        .fb_mpn_mobile_landing_page_slide_up {
+            animation-duration: 500ms;
+            animation-name: fb_mpn_landing_page_slide_up;
+            transition-timing-function: ease-in
+        }
+
+        .fb_mpn_mobile_bounce_in {
+            animation-duration: 300ms;
+            animation-name: fb_mpn_bounce_in;
+            transition-timing-function: ease-in
+        }
+
+        .fb_mpn_mobile_bounce_out {
+            animation-duration: 300ms;
+            animation-name: fb_mpn_bounce_out;
+            transition-timing-function: ease-in
+        }
+
+        .fb_mpn_mobile_bounce_out_v2 {
+            animation-duration: 300ms;
+            animation-name: fb_mpn_fade_out;
+            transition-timing-function: ease-in
+        }
+
+        .fb_customer_chat_bounce_in_v2 {
+            animation-duration: 300ms;
+            animation-name: fb_bounce_in_v2;
+            transition-timing-function: ease-in
+        }
+
+        .fb_customer_chat_bounce_in_from_left {
+            animation-duration: 300ms;
+            animation-name: fb_bounce_in_from_left;
+            transition-timing-function: ease-in
+        }
+
+        .fb_customer_chat_bounce_out_v2 {
+            animation-duration: 300ms;
+            animation-name: fb_bounce_out_v2;
+            transition-timing-function: ease-in
+        }
+
+        .fb_customer_chat_bounce_out_from_left {
+            animation-duration: 300ms;
+            animation-name: fb_bounce_out_from_left;
+            transition-timing-function: ease-in
+        }
+
+        .fb_invisible_flow {
+            display: inherit;
+            height: 0;
+            overflow-x: hidden;
+            width: 0
+        }
+
+        @keyframes fb_mpn_landing_page_slide_out {
+            0% {
+                margin: 0 12px;
+                width: 100% - 24px
+            }
+
+            60% {
+                border-radius: 18px
+            }
+
+            100% {
+                border-radius: 50%;
+                margin: 0 24px;
+                width: 60px
+            }
+        }
+
+        @keyframes fb_mpn_landing_page_slide_out_from_left {
+            0% {
+                left: 12px;
+                width: 100% - 24px
+            }
+
+            60% {
+                border-radius: 18px
+            }
+
+            100% {
+                border-radius: 50%;
+                left: 12px;
+                width: 60px
+            }
+        }
+
+        @keyframes fb_mpn_landing_page_slide_up {
+            0% {
+                bottom: 0;
+                opacity: 0
+            }
+
+            100% {
+                bottom: 24px;
+                opacity: 1
+            }
+        }
+
+        @keyframes fb_mpn_bounce_in {
+            0% {
+                opacity: .5;
+                top: 100%
+            }
+
+            100% {
+                opacity: 1;
+                top: 0
+            }
+        }
+
+        @keyframes fb_mpn_fade_out {
+            0% {
+                bottom: 30px;
+                opacity: 1
+            }
+
+            100% {
+                bottom: 0;
+                opacity: 0
+            }
+        }
+
+        @keyframes fb_mpn_bounce_out {
+            0% {
+                opacity: 1;
+                top: 0
+            }
+
+            100% {
+                opacity: .5;
+                top: 100%
+            }
+        }
+
+        @keyframes fb_bounce_in_v2 {
+            0% {
+                opacity: 0;
+                transform: scale(0, 0);
+                transform-origin: bottom right
+            }
+
+            50% {
+                transform: scale(1.03, 1.03);
+                transform-origin: bottom right
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1, 1);
+                transform-origin: bottom right
+            }
+        }
+
+        @keyframes fb_bounce_in_from_left {
+            0% {
+                opacity: 0;
+                transform: scale(0, 0);
+                transform-origin: bottom left
+            }
+
+            50% {
+                transform: scale(1.03, 1.03);
+                transform-origin: bottom left
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1, 1);
+                transform-origin: bottom left
+            }
+        }
+
+        @keyframes fb_bounce_out_v2 {
+            0% {
+                opacity: 1;
+                transform: scale(1, 1);
+                transform-origin: bottom right
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(0, 0);
+                transform-origin: bottom right
+            }
+        }
+
+        @keyframes fb_bounce_out_from_left {
+            0% {
+                opacity: 1;
+                transform: scale(1, 1);
+                transform-origin: bottom left
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(0, 0);
+                transform-origin: bottom left
+            }
+        }
+
+        @keyframes slideInFromBottom {
+            0% {
+                opacity: .1;
+                transform: translateY(100%)
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        @keyframes slideInFromBottomDelay {
+            0% {
+                opacity: 0;
+                transform: translateY(100%)
+            }
+
+            97% {
+                opacity: 0;
+                transform: translateY(100%)
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+    </style>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1031.0" data-gr-ext-installed="">
+    <!-- BuySellAds Ad Code -->
+    <script type="text/javascript">
+        (function () {
+            var bsa = document.createElement('script');
+            bsa.type = 'text/javascript';
+            bsa.async = true;
+            bsa.src = 'http://s3.buysellads.com/ac/bsa.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(bsa);
+        })();
+    </script>
+    <!-- End BuySellAds Ad Code -->
+    <div id="fb-root" class=" fb_reset">
+        <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+            <div></div>
+        </div>
+    </div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="main">
+        <div class="header">
+            <div class="header_resize">
+                <div class="menu_nav">
+                    <ul style="border-radius: 6px;">
+                        <li><a href="http://gundata.org/"><span>Home</span></a></li>
+                        <li><a href="http://gundata.org/h/category/pistols/"><span>Pistols</span></a></li>
+                        <li><a href="http://gundata.org/h/category/rifles/"><span>Rifles</span></a></li>
+                        <li><a href="http://gundata.org/h/category/shotguns/"><span>Shotguns</span></a></li>
+                        <!--li><a href="#"><span>Articles</span></a></li-->
+                        <li><a rel="nofollow" href="http://gundata.org/login/"><span>Login</span></a></li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <h1><a href="http://gundata.org"><img src="http://gundata.org/images/gundata-logo.png"
+                                alt="Gun Values, Prices, &amp; Data" border="0"></a></h1>
+                </div>
+                <div class="clr"></div>
+
+            </div>
+
+            <div class="clr"></div>
+        </div>
+    </div><a name="top"></a>
+    <div class="content">
+        <div class="content_resize">
+            <div class="mainbar">
+                <div class="article">
+
+                    <h2 style="border-radius: 6px;">Ballistic Calculator</h2>
+                    <p>
+                        <span class="st_facebook_hcount" displaytext="Facebook" st_processed="yes"><span
+                                style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;"
+                                class="stButton"><span><span class="stMainServices st-facebook-counter"
+                                        style="background-image: url(&quot;https://ws.sharethis.com/images/2017/facebook_counter.png&quot;);">&nbsp;</span><span
+                                        class="stArrow"><span class="stButton_gradient stHBubble"
+                                            style="display: inline-block;"><span
+                                                class="stBubble_hcount">9188</span></span></span></span></span></span>
+                        <span class="st_fblike_hcount" displaytext="Facebook Like" st_processed="yes"><span
+                                style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;position:relative;margin:3px 3px 0;padding:0px;font-size:11px;line-height:0px;vertical-align:bottom;overflow:visible;">
+                                <div data-action="" data-send="false" data-layout="button_count" data-show-faces="false"
+                                    class="fb-like fb_iframe_widget"
+                                    data-href="http://gundata.org/ballistic-calculator/" fb-xfbml-state="rendered"
+                                    fb-iframe-plugin-query="action=&amp;app_id=&amp;container_width=0&amp;href=http%3A%2F%2Fgundata.org%2Fballistic-calculator%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false">
+                                    <span style="vertical-align: bottom; width: 90px; height: 28px;"><iframe
+                                            name="f2e65b825f0a34" width="1000px" height="1000px"
+                                            data-testid="fb:like Facebook Social Plugin"
+                                            title="fb:like Facebook Social Plugin" frameborder="0"
+                                            allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                            allow="encrypted-media"
+                                            src="https://web.facebook.com/v2.0/plugins/like.php?action=&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df218a742c36529c%26domain%3Dgundata.org%26is_canvas%3Dfalse%26origin%3Dhttp%253A%252F%252Fgundata.org%252Ffbc76f362335d8%26relation%3Dparent.parent&amp;container_width=0&amp;href=http%3A%2F%2Fgundata.org%2Fballistic-calculator%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false"
+                                            style="border: none; visibility: visible; width: 90px; height: 28px;"
+                                            class=""></iframe></span>
+                                </div>
+                            </span></span>
+                        <span class="st_twitter_hcount" displaytext="Tweet" st_processed="yes"><span
+                                style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;"
+                                class="stButton"><span><span class="stMainServices st-twitter-counter"
+                                        style="background-image: url(&quot;https://ws.sharethis.com/images/2017/twitter_counter.png&quot;);">&nbsp;</span><span
+                                        class="stArrow"><span class="stButton_gradient stHBubble"
+                                            style="display: inline-block;"><span
+                                                class="stBubble_hcount">403</span></span></span></span></span></span>
+                        <span class="st_email_hcount" displaytext="Email" st_processed="yes"><span
+                                style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;"
+                                class="stButton"><span><span class="stMainServices st-email-counter"
+                                        style="background-image: url(&quot;https://ws.sharethis.com/images/2017/email_counter.png&quot;);">&nbsp;</span><span
+                                        class="stArrow"><span class="stButton_gradient stHBubble"
+                                            style="display: inline-block;"><span
+                                                class="stBubble_hcount">1948</span></span></span></span></span></span>
+                    </p>
+                    <div class="blog-image-r">
+                        
+                        <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                        </script><ins id="aswift_0_expand"
+                            style="display:inline-table;border:none;margin:0;padding:0;position:relative;visibility:visible;background-color:transparent;width:336px;height:280px;"
+                            data-ad-slot="6233864047" tabindex="0" title="Advertisement" aria-label="Advertisement"
+                            data-ad-status="unfilled"><ins id="aswift_0_anchor"
+                                style="display:block;border:none;margin:0;padding:0;position:relative;visibility:visible;background-color:transparent;width:336px;height:280px;"><iframe
+                                    id="aswift_0" name="aswift_0"
+                                    style="left:0;position:absolute;top:0;border:0;width:336px;height:280px;"
+                                    sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+                                    width="336" height="280" frameborder="0"
+                                    src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-8417283882784443&amp;output=html&amp;h=280&amp;slotname=6233864047&amp;adk=2173605006&amp;adf=3652887655&amp;pi=t.ma~as.6233864047&amp;w=336&amp;lmt=1633343634&amp;url=http%3A%2F%2Fgundata.org%2Fballistic-calculator%2F&amp;flash=0&amp;wgl=1&amp;dt=1633343634508&amp;bpp=6&amp;bdt=58&amp;idt=56&amp;shv=r20210928&amp;mjsv=m202109270101&amp;ptt=5&amp;saldr=sa&amp;abxe=1&amp;cookie=ID%3D10a27c7aa708449b-2259e18608cc008d%3AT%3D1633004559%3ART%3D1633004559%3AS%3DALNI_MYiZWSf9px_q5pWbnSBs2A14uxipQ&amp;correlator=6310793579467&amp;frm=20&amp;pv=2&amp;ga_vid=516466119.1633004560&amp;ga_sid=1633342238&amp;ga_hid=1167555236&amp;ga_fc=1&amp;u_tz=180&amp;u_his=2&amp;u_h=1152&amp;u_w=2048&amp;u_ah=1112&amp;u_aw=2048&amp;u_cd=24&amp;u_java=0&amp;u_nplug=5&amp;u_nmime=2&amp;adx=1160&amp;ady=231&amp;biw=2031&amp;bih=1010&amp;scr_x=0&amp;scr_y=1004&amp;eid=31062422%2C31062977&amp;oid=2&amp;pvsid=3518572951326196&amp;pem=79&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;eae=0&amp;fc=640&amp;brdim=0%2C0%2C0%2C0%2C2048%2C0%2C2048%2C1112%2C2048%2C1010&amp;vis=1&amp;rsz=%7C%7CeE%7C&amp;abl=CS&amp;pfx=0&amp;fu=0&amp;bc=23&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;xpc=vjV2PwvybT&amp;p=http%3A//gundata.org&amp;dtd=67"
+                                    marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true"
+                                    scrolling="no" allowfullscreen="true" data-google-container-id="a!1"
+                                    data-google-query-id="CPLbt5jHsPMCFVpbFQgdl7gF_A"
+                                    data-load-complete="true"></iframe></ins></ins>
+                        <p>Bookmark Us Now! Hit <strong>CTRL+D</strong> Now!</p>
+                    </div>
+
+                    <p>Thanks for using the external ballistic calculator from GunData.org that accurately details all
+                        aspects of the bullets trajectory the millisecond it leaves the guns barrel. Please share, like,
+                        and tweet this page and others to show your support.</p>
+                    <p><img src="/images/rifle-range-2.jpg" alt="Rifle Trajectory"></p>
+                    <p>Our calculator creates a proper ballistics trajectory chart that details range, drop, velocity,
+                        energy (fps), wind drift, and time. It takes into effect things like atmospheric conditions,
+                        wind, and even allows you to make projections shooting both up and down hill. No other free
+                        online calculator does.</p>
+                    <p>Need a new scope at an affordable price? Currently this is the <a href="https://amzn.to/2rz6Q3B"
+                            target="_blank">best hunting scope for the money</a>.</p>
+
+
+                    <link rel="stylesheet" type="text/css" href="balcalc_stylesheet.css">
+                    <script type="text/javascript" language="javascript" src="jquery-1.7.2-min.js"></script>
+                    <script type="text/javascript" language="javascript" src="balcalc_scripts.js"></script>
+                    <script>
+
+                        $(document).ready(function () {
+
+                            get_all_bullets(2);
+                        });
+                    </script>
+
+
+
+                    <form name="frm_calc_input" method="post" action="http://gundata.org/ballistic-calculator/">
+                        <table border="0" cellpadding="0" cellspacing="0"
+                            style="border:1px solid #CCC; border-radius:15px; -moz-border-radius:15px;"
+                            class="left-align" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td colspan="2"><strong>Projectile parameters</strong></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><strong>You can compare up to
+                                            2 different bullets</strong></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div id="div_bullet_input1"
+                                            style="border:1px solid #CCC; border-radius:15px; -moz-border-radius:15px; margin-bottom:10px; display:block">
+                                            <table width="100%" border="0" cellpadding="0" cellspacing="0"
+                                                class="left-align">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><strong>Bullet #
+                                                                1 </strong></td>
+                                                        <td align="right"> &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bullet caliber</td>
+                                                        <td><select name="sel_caliber1" id="sel_caliber1"
+                                                                onchange="change_caliber(1)" style="width:200px;">
+                                                                <option value=".17 Aguila">.17 Aguila</option>
+                                                                <option value=".17 Fireball">.17 Fireball</option>
+                                                                <option value=".17 Hornady Magnum Rimfire (HMR)">.17
+                                                                    Hornady Magnum Rimfire (HMR)</option>
+                                                                <option value=".17 Mach 2">.17 Mach 2</option>
+                                                                <option value=".17 Remington">.17 Remington</option>
+                                                                <option value=".204 Ruger">.204 Ruger</option>
+                                                                <option value=".218 Bee">.218 Bee</option>
+                                                                <option value=".22 Hornet">.22 Hornet</option>
+                                                                <option value=".22 Long">.22 Long</option>
+                                                                <option
+                                                                    value=".22 Long Rifle High Velocity and Hyper Velocity">
+                                                                    .22 Long Rifle High Velocity and Hyper Velocity
+                                                                </option>
+                                                                <option value=".22 Rimfire Shotshells">.22 Rimfire
+                                                                    Shotshells</option>
+                                                                <option value=".22 Short">.22 Short</option>
+                                                                <option
+                                                                    value=".22 Standard Velocity and Match Ammunition">
+                                                                    .22 Standard Velocity and Match Ammunition</option>
+                                                                <option value=".22 Winchester Magnum Rimfire">.22
+                                                                    Winchester Magnum Rimfire</option>
+                                                                <option value=".22-250 Remington">.22-250 Remington
+                                                                </option>
+                                                                <option value=".220 Swift">.220 Swift</option>
+                                                                <option value=".221 Remington Fireball">.221 Remington
+                                                                    Fireball</option>
+                                                                <option value=".222 Remington">.222 Remington</option>
+                                                                <option value=".222 Remington Magnum">.222 Remington
+                                                                    Magnum</option>
+                                                                <option value=".223 Remington">.223 Remington</option>
+                                                                <option
+                                                                    value=".223 Winchester Super Short Magnum (WSSM)">
+                                                                    .223 Winchester Super Short Magnum (WSSM)</option>
+                                                                <option value=".224 Weatherby Magnum">.224 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".225 Winchester">.225 Winchester</option>
+                                                                <option value=".240 Weatherby Magnum">.240 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".243 Winchester">.243 Winchester</option>
+                                                                <option value=".243 Winchester Super Short Magnum">.243
+                                                                    Winchester Super Short Magnum</option>
+                                                                <option value=".25 Auto (ACP)">.25 Auto (ACP)</option>
+                                                                <option
+                                                                    value=".25 Winchester Super Short Magnum (WSSM)">.25
+                                                                    Winchester Super Short Magnum (WSSM)</option>
+                                                                <option value=".25-06 Remington">.25-06 Remington
+                                                                </option>
+                                                                <option value=".25-20 Winchester">.25-20 Winchester
+                                                                </option>
+                                                                <option value=".25-35 Winchester">.25-35 Winchester
+                                                                </option>
+                                                                <option value=".250 Savage">.250 Savage</option>
+                                                                <option value=".257 Roberts">.257 Roberts</option>
+                                                                <option value=".257 Weatherby Magnum">.257 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".260 Remington">.260 Remington</option>
+                                                                <option value=".264 Winchester Magnum">.264 Winchester
+                                                                    Magnum</option>
+                                                                <option value=".270 Weatherby Magnum">.270 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".270 Winchester">.270 Winchester</option>
+                                                                <option value=".270 Winchester Short Magnum">.270
+                                                                    Winchester Short Magnum</option>
+                                                                <option value=".280 Remington">.280 Remington</option>
+                                                                <option value=".284 Winchester">.284 Winchester</option>
+                                                                <option value=".30 Luger (7.65mm)">.30 Luger (7.65mm)
+                                                                </option>
+                                                                <option value=".30 M1 Carbine">.30 M1 Carbine</option>
+                                                                <option value=".30-06 Springfield">.30-06 Springfield
+                                                                </option>
+                                                                <option value=".30-30 Winchester">.30-30 Winchester
+                                                                </option>
+                                                                <option value=".30-378 Weatherby">.30-378 Weatherby
+                                                                </option>
+                                                                <option value=".300 Dakota">.300 Dakota</option>
+                                                                <option value=".300 H&amp;H Magnum">.300 H&amp;H Magnum
+                                                                </option>
+                                                                <option
+                                                                    value=".300 Remington Short Action Ultra Magnum">
+                                                                    .300 Remington Short Action Ultra Magnum</option>
+                                                                <option value=".300 Remington Ultra Magnum">.300
+                                                                    Remington Ultra Magnum</option>
+                                                                <option value=".300 Savage">.300 Savage</option>
+                                                                <option value=".300 Weatherby Magnum">.300 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".300 Winchester Magnum">.300 Winchester
+                                                                    Magnum</option>
+                                                                <option value=".300 Winchester Short Magnum">.300
+                                                                    Winchester Short Magnum</option>
+                                                                <option value=".303 British">.303 British</option>
+                                                                <option value=".307 Winchester">.307 Winchester</option>
+                                                                <option value=".308 Winchester (7.62mm NATO)">.308
+                                                                    Winchester (7.62mm NATO)</option>
+                                                                <option value=".32 Auto (7.65mm Browning)">.32 Auto
+                                                                    (7.65mm Browning)</option>
+                                                                <option value=".32 H&amp;R Magnum">.32 H&amp;R Magnum
+                                                                </option>
+                                                                <option value=".32 Short Colt">.32 Short Colt</option>
+                                                                <option value=".32 Smith &amp; Wesson">.32 Smith &amp;
+                                                                    Wesson</option>
+                                                                <option value=".32 Smith &amp; Wesson Long">.32 Smith
+                                                                    &amp; Wesson Long</option>
+                                                                <option value=".32 Winchester Special">.32 Winchester
+                                                                    Special</option>
+                                                                <option value=".32-20 Winchester">.32-20 Winchester
+                                                                </option>
+                                                                <option value=".325 Winchester Short Magnum">.325
+                                                                    Winchester Short Magnum</option>
+                                                                <option value=".327 Federal Magnum">.327 Federal Magnum
+                                                                </option>
+                                                                <option value=".330 Dakota">.330 Dakota</option>
+                                                                <option value=".338 A Square">.338 A Square</option>
+                                                                <option value=".338 Lapua Magnum">.338 Lapua Magnum
+                                                                </option>
+                                                                <option value=".338 Remington Ultra Magnum">.338
+                                                                    Remington Ultra Magnum</option>
+                                                                <option value=".338 Winchester Magnum">.338 Winchester
+                                                                    Magnum</option>
+                                                                <option value=".338-378 Weatherby">.338-378 Weatherby
+                                                                </option>
+                                                                <option value=".340 Weatherby Magnum">.340 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".35 Remington">.35 Remington</option>
+                                                                <option value=".35 Whelen">.35 Whelen</option>
+                                                                <option value=".350 Remington Magnum">.350 Remington
+                                                                    Magnum</option>
+                                                                <option value=".356 Winchester">.356 Winchester</option>
+                                                                <option value=".357 Magnum">.357 Magnum</option>
+                                                                <option value=".357 Magnum (Rifle Data)">.357 Magnum
+                                                                    (Rifle Data)</option>
+                                                                <option value=".357 SIG">.357 SIG</option>
+                                                                <option value=".375 A-Square">.375 A-Square</option>
+                                                                <option value=".375 Dakota">.375 Dakota</option>
+                                                                <option value=".375 Holland &amp; Holland Magnum">.375
+                                                                    Holland &amp; Holland Magnum</option>
+                                                                <option value=".375 Remington Ultra Magnum">.375
+                                                                    Remington Ultra Magnum</option>
+                                                                <option value=".375 Ruger">.375 Ruger</option>
+                                                                <option value=".375 Weatherby Magnum">.375 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".375 Winchester">.375 Winchester</option>
+                                                                <option value=".378 Weatherby Magnum">.378 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".38 Short Colt">.38 Short Colt</option>
+                                                                <option value=".38 Smith &amp; Wesson">.38 Smith &amp;
+                                                                    Wesson</option>
+                                                                <option
+                                                                    value=".38 Special (.38 Smith &amp; Wesson Special)">
+                                                                    .38 Special (.38 Smith &amp; Wesson Special)
+                                                                </option>
+                                                                <option value=".38 Super Auto Colt">.38 Super Auto Colt
+                                                                </option>
+                                                                <option value=".38-40 Winchester">.38-40 Winchester
+                                                                </option>
+                                                                <option value=".38-55 Winchester">.38-55 Winchester
+                                                                </option>
+                                                                <option value=".380 Auto (9mm Browning Short)">.380 Auto
+                                                                    (9mm Browning Short)</option>
+                                                                <option value=".40 Smith &amp; Wesson">.40 Smith &amp;
+                                                                    Wesson</option>
+                                                                <option value=".400 A-Square Dual Purpose Magnum (DPM)">
+                                                                    .400 A-Square Dual Purpose Magnum (DPM)</option>
+                                                                <option value=".404 Dakota">.404 Dakota</option>
+                                                                <option value=".405 Winchester">.405 Winchester</option>
+                                                                <option value=".41 Remington Magnum">.41 Remington
+                                                                    Magnum</option>
+                                                                <option value=".416 Dakota">.416 Dakota</option>
+                                                                <option value=".416 Remington Magnum">.416 Remington
+                                                                    Magnum</option>
+                                                                <option value=".416 Rigby">.416 Rigby</option>
+                                                                <option value=".416 Weatherby Magnum">.416 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".44 Colt">.44 Colt</option>
+                                                                <option value=".44 Remington Magnum (Pistol Data)">.44
+                                                                    Remington Magnum (Pistol Data)</option>
+                                                                <option value=".44 Remington Magnum (Rifle Data)">.44
+                                                                    Remington Magnum (Rifle Data)</option>
+                                                                <option value=".44 Smith &amp; Wesson Special">.44 Smith
+                                                                    &amp; Wesson Special</option>
+                                                                <option value=".44-40 Winchester">.44-40 Winchester
+                                                                </option>
+                                                                <option value=".444 Marlin">.444 Marlin</option>
+                                                                <option value=".45 Auto (.45 ACP)">.45 Auto (.45 ACP)
+                                                                </option>
+                                                                <option value=".45 Colt (.45 Long Colt)">.45 Colt (.45
+                                                                    Long Colt)</option>
+                                                                <option value=".45 GAP (Glock Automatic Pistol)">.45 GAP
+                                                                    (Glock Automatic Pistol)</option>
+                                                                <option value=".45 Smith &amp; Wesson Schofield">.45
+                                                                    Smith &amp; Wesson Schofield</option>
+                                                                <option value=".45 Winchester Magnum">.45 Winchester
+                                                                    Magnum</option>
+                                                                <option value=".45-70 Government">.45-70 Government
+                                                                </option>
+                                                                <option value=".450 Dakota">.450 Dakota</option>
+                                                                <option value=".450 Marlin">.450 Marlin</option>
+                                                                <option value=".454 Casull">.454 Casull</option>
+                                                                <option value=".458 Lott">.458 Lott</option>
+                                                                <option value=".458 Winchester Magnum">.458 Winchester
+                                                                    Magnum</option>
+                                                                <option value=".460 Smith &amp; Wesson">.460 Smith &amp;
+                                                                    Wesson</option>
+                                                                <option value=".460 Weatherby Magnum">.460 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".470 Nitro Express">.470 Nitro Express
+                                                                </option>
+                                                                <option value=".475 Linebaugh">.475 Linebaugh</option>
+                                                                <option value=".475 Nitro Express Number 2">.475 Nitro
+                                                                    Express Number 2</option>
+                                                                <option value=".480 Ruger">.480 Ruger</option>
+                                                                <option value=".495 A-Square">.495 A-Square</option>
+                                                                <option value=".50 Action Express">.50 Action Express
+                                                                </option>
+                                                                <option value=".500 A-Square">.500 A-Square</option>
+                                                                <option value=".500 Jeffery">.500 Jeffery</option>
+                                                                <option value=".500 Nitro Express 3-Inch">.500 Nitro
+                                                                    Express 3-Inch</option>
+                                                                <option value=".500 Smith &amp; Wesson Special">.500
+                                                                    Smith &amp; Wesson Special</option>
+                                                                <option value=".500 Smith &amp; Wesson Special Magnum">
+                                                                    .500 Smith &amp; Wesson Special Magnum</option>
+                                                                <option value=".500-465 Nitro Express">.500-465 Nitro
+                                                                    Express</option>
+                                                                <option value=".505 Rimless Magnum (Gibbs)">.505 Rimless
+                                                                    Magnum (Gibbs)</option>
+                                                                <option value=".577 Nitro Express 3-Inch">.577 Nitro
+                                                                    Express 3-Inch</option>
+                                                                <option value=".577 Tyrannosaur">.577 Tyrannosaur
+                                                                </option>
+                                                                <option value=".600 Nitro Express">.600 Nitro Express
+                                                                </option>
+                                                                <option value=".700 Nitro Express">.700 Nitro Express
+                                                                </option>
+                                                                <option value="10.57mm (.416) Lazzeroni Meteor">10.57mm
+                                                                    (.416) Lazzeroni Meteor</option>
+                                                                <option value="10mm Auto">10mm Auto</option>
+                                                                <option value="5mm Remington Rimfire Magnum">5mm
+                                                                    Remington Rimfire Magnum</option>
+                                                                <option value="6.17mm (.243) Lazzeroni Spitfire">6.17mm
+                                                                    (.243) Lazzeroni Spitfire</option>
+                                                                <option value="6.5 Mannlicher-Schoenauer">6.5
+                                                                    Mannlicher-Schoenauer</option>
+                                                                <option value="6.53mm (.257) Lazzeroni Scramjet">6.53mm
+                                                                    (.257) Lazzeroni Scramjet</option>
+                                                                <option value="6.5mm Remington Magnum">6.5mm Remington
+                                                                    Magnum</option>
+                                                                <option value="6.5x55mm Swedish Mauser">6.5x55mm Swedish
+                                                                    Mauser</option>
+                                                                <option value="6.5x57 Mauser">6.5x57 Mauser</option>
+                                                                <option value="6.71mm (.264) Lazzeroni Phantom">6.71mm
+                                                                    (.264) Lazzeroni Phantom</option>
+                                                                <option value="6.8mm Remington SPC">6.8mm Remington SPC
+                                                                </option>
+                                                                <option value="6mm Remington">6mm Remington</option>
+                                                                <option value="7-30 Waters">7-30 Waters</option>
+                                                                <option value="7.21mm (.284) Lazzeroni Firebird">7.21mm
+                                                                    (.284) Lazzeroni Firebird</option>
+                                                                <option value="7.62x39mm Russian">7.62x39mm Russian
+                                                                </option>
+                                                                <option value="7.82mm (.308) Lazzeroni Patriot">7.82mm
+                                                                    (.308) Lazzeroni Patriot</option>
+                                                                <option value="7.82mm (.308) Lazzeroni Warbird">7.82mm
+                                                                    (.308) Lazzeroni Warbird</option>
+                                                                <option value="7mm Dakota">7mm Dakota</option>
+                                                                <option value="7mm Remington Magnum">7mm Remington
+                                                                    Magnum</option>
+                                                                <option value="7mm Remington Short Action Ultra Magnum">
+                                                                    7mm Remington Short Action Ultra Magnum</option>
+                                                                <option value="7mm Remington Ultra Magnum">7mm Remington
+                                                                    Ultra Magnum</option>
+                                                                <option value="7mm STW (Shooting Times Westerner)">7mm
+                                                                    STW (Shooting Times Westerner)</option>
+                                                                <option value="7mm Weatherby Magnum">7mm Weatherby
+                                                                    Magnum</option>
+                                                                <option value="7mm Winchester Short Magnum (WSM)">7mm
+                                                                    Winchester Short Magnum (WSM)</option>
+                                                                <option value="7mm-08 Remington">7mm-08 Remington
+                                                                </option>
+                                                                <option value="7x57mm Mauser">7x57mm Mauser</option>
+                                                                <option value="7x64mm Brenneke">7x64mm Brenneke</option>
+                                                                <option value="8.59mm (.338) Lazzeroni Titan">8.59mm
+                                                                    (.338) Lazzeroni Titan</option>
+                                                                <option value="8mm Remington Magnum">8mm Remington
+                                                                    Magnum</option>
+                                                                <option value="8x57mm Mauser JS">8x57mm Mauser JS
+                                                                </option>
+                                                                <option value="9.3x74R">9.3x74R</option>
+                                                                <option value="9mm Largo (9x23mm)">9mm Largo (9x23mm)
+                                                                </option>
+                                                                <option value="9mm Luger (9mm Parabellum) (9x19mm)">9mm
+                                                                    Luger (9mm Parabellum) (9x19mm)</option>
+                                                                <option value="9mm Makarov (9x18mm)">9mm Makarov
+                                                                    (9x18mm)</option>
+                                                                <option value="9x23mm Winchester">9x23mm Winchester
+                                                                </option>
+                                                            </select></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bullet name</td>
+                                                        <td><select name="sel_name1" id="sel_name1"
+                                                                onchange="change_name(1)" style="width:200px;">
+                                                                <option value="23">Winchester Hollow Point, 46gr
+                                                                </option>
+                                                            </select></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ballistic coefficient</td>
+                                                        <td><input type="text" name="txt_bc1" value="" maxlength="10"
+                                                                size="10" id="txt_bc1"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Initial velocity <em>(feets per second)</em></td>
+                                                        <td><input type="text" name="txt_mv1" value="" maxlength="10"
+                                                                size="10" id="txt_mv1"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bullet weight <em>(grans)</em></td>
+                                                        <td><input type="text" name="txt_weight1" value=""
+                                                                maxlength="10" size="10" id="txt_weight1"
+                                                                onkeyup="try_calc_bc(1)"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="div_bullet_input2"
+                                            style="border:1px solid #CCC; border-radius:15px; -moz-border-radius:15px; margin-bottom:10px; display:none">
+                                            <table width="100%" border="0" cellpadding="0" cellspacing="0"
+                                                class="left-align">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><strong>Bullet #
+                                                                2 </strong></td>
+                                                        <td align="right"> <img src="cross.png"
+                                                                id="img_hide_bullet_input2" border="0"
+                                                                onclick="hide_current_bullet_input()"
+                                                                style="cursor:pointer;">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bullet caliber</td>
+                                                        <td><select name="sel_caliber2" id="sel_caliber2"
+                                                                onchange="change_caliber(2)" style="width:200px;">
+                                                                <option value=".17 Aguila">.17 Aguila</option>
+                                                                <option value=".17 Fireball">.17 Fireball</option>
+                                                                <option value=".17 Hornady Magnum Rimfire (HMR)">.17
+                                                                    Hornady Magnum Rimfire (HMR)</option>
+                                                                <option value=".17 Mach 2">.17 Mach 2</option>
+                                                                <option value=".17 Remington">.17 Remington</option>
+                                                                <option value=".204 Ruger">.204 Ruger</option>
+                                                                <option value=".218 Bee">.218 Bee</option>
+                                                                <option value=".22 Hornet">.22 Hornet</option>
+                                                                <option value=".22 Long">.22 Long</option>
+                                                                <option
+                                                                    value=".22 Long Rifle High Velocity and Hyper Velocity">
+                                                                    .22 Long Rifle High Velocity and Hyper Velocity
+                                                                </option>
+                                                                <option value=".22 Rimfire Shotshells">.22 Rimfire
+                                                                    Shotshells</option>
+                                                                <option value=".22 Short">.22 Short</option>
+                                                                <option
+                                                                    value=".22 Standard Velocity and Match Ammunition">
+                                                                    .22 Standard Velocity and Match Ammunition</option>
+                                                                <option value=".22 Winchester Magnum Rimfire">.22
+                                                                    Winchester Magnum Rimfire</option>
+                                                                <option value=".22-250 Remington">.22-250 Remington
+                                                                </option>
+                                                                <option value=".220 Swift">.220 Swift</option>
+                                                                <option value=".221 Remington Fireball">.221 Remington
+                                                                    Fireball</option>
+                                                                <option value=".222 Remington">.222 Remington</option>
+                                                                <option value=".222 Remington Magnum">.222 Remington
+                                                                    Magnum</option>
+                                                                <option value=".223 Remington">.223 Remington</option>
+                                                                <option
+                                                                    value=".223 Winchester Super Short Magnum (WSSM)">
+                                                                    .223 Winchester Super Short Magnum (WSSM)</option>
+                                                                <option value=".224 Weatherby Magnum">.224 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".225 Winchester">.225 Winchester</option>
+                                                                <option value=".240 Weatherby Magnum">.240 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".243 Winchester">.243 Winchester</option>
+                                                                <option value=".243 Winchester Super Short Magnum">.243
+                                                                    Winchester Super Short Magnum</option>
+                                                                <option value=".25 Auto (ACP)">.25 Auto (ACP)</option>
+                                                                <option
+                                                                    value=".25 Winchester Super Short Magnum (WSSM)">.25
+                                                                    Winchester Super Short Magnum (WSSM)</option>
+                                                                <option value=".25-06 Remington">.25-06 Remington
+                                                                </option>
+                                                                <option value=".25-20 Winchester">.25-20 Winchester
+                                                                </option>
+                                                                <option value=".25-35 Winchester">.25-35 Winchester
+                                                                </option>
+                                                                <option value=".250 Savage">.250 Savage</option>
+                                                                <option value=".257 Roberts">.257 Roberts</option>
+                                                                <option value=".257 Weatherby Magnum">.257 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".260 Remington">.260 Remington</option>
+                                                                <option value=".264 Winchester Magnum">.264 Winchester
+                                                                    Magnum</option>
+                                                                <option value=".270 Weatherby Magnum">.270 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".270 Winchester">.270 Winchester</option>
+                                                                <option value=".270 Winchester Short Magnum">.270
+                                                                    Winchester Short Magnum</option>
+                                                                <option value=".280 Remington">.280 Remington</option>
+                                                                <option value=".284 Winchester">.284 Winchester</option>
+                                                                <option value=".30 Luger (7.65mm)">.30 Luger (7.65mm)
+                                                                </option>
+                                                                <option value=".30 M1 Carbine">.30 M1 Carbine</option>
+                                                                <option value=".30-06 Springfield">.30-06 Springfield
+                                                                </option>
+                                                                <option value=".30-30 Winchester">.30-30 Winchester
+                                                                </option>
+                                                                <option value=".30-378 Weatherby">.30-378 Weatherby
+                                                                </option>
+                                                                <option value=".300 Dakota">.300 Dakota</option>
+                                                                <option value=".300 H&amp;H Magnum">.300 H&amp;H Magnum
+                                                                </option>
+                                                                <option
+                                                                    value=".300 Remington Short Action Ultra Magnum">
+                                                                    .300 Remington Short Action Ultra Magnum</option>
+                                                                <option value=".300 Remington Ultra Magnum">.300
+                                                                    Remington Ultra Magnum</option>
+                                                                <option value=".300 Savage">.300 Savage</option>
+                                                                <option value=".300 Weatherby Magnum">.300 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".300 Winchester Magnum">.300 Winchester
+                                                                    Magnum</option>
+                                                                <option value=".300 Winchester Short Magnum">.300
+                                                                    Winchester Short Magnum</option>
+                                                                <option value=".303 British">.303 British</option>
+                                                                <option value=".307 Winchester">.307 Winchester</option>
+                                                                <option value=".308 Winchester (7.62mm NATO)">.308
+                                                                    Winchester (7.62mm NATO)</option>
+                                                                <option value=".32 Auto (7.65mm Browning)">.32 Auto
+                                                                    (7.65mm Browning)</option>
+                                                                <option value=".32 H&amp;R Magnum">.32 H&amp;R Magnum
+                                                                </option>
+                                                                <option value=".32 Short Colt">.32 Short Colt</option>
+                                                                <option value=".32 Smith &amp; Wesson">.32 Smith &amp;
+                                                                    Wesson</option>
+                                                                <option value=".32 Smith &amp; Wesson Long">.32 Smith
+                                                                    &amp; Wesson Long</option>
+                                                                <option value=".32 Winchester Special">.32 Winchester
+                                                                    Special</option>
+                                                                <option value=".32-20 Winchester">.32-20 Winchester
+                                                                </option>
+                                                                <option value=".325 Winchester Short Magnum">.325
+                                                                    Winchester Short Magnum</option>
+                                                                <option value=".327 Federal Magnum">.327 Federal Magnum
+                                                                </option>
+                                                                <option value=".330 Dakota">.330 Dakota</option>
+                                                                <option value=".338 A Square">.338 A Square</option>
+                                                                <option value=".338 Lapua Magnum">.338 Lapua Magnum
+                                                                </option>
+                                                                <option value=".338 Remington Ultra Magnum">.338
+                                                                    Remington Ultra Magnum</option>
+                                                                <option value=".338 Winchester Magnum">.338 Winchester
+                                                                    Magnum</option>
+                                                                <option value=".338-378 Weatherby">.338-378 Weatherby
+                                                                </option>
+                                                                <option value=".340 Weatherby Magnum">.340 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".35 Remington">.35 Remington</option>
+                                                                <option value=".35 Whelen">.35 Whelen</option>
+                                                                <option value=".350 Remington Magnum">.350 Remington
+                                                                    Magnum</option>
+                                                                <option value=".356 Winchester">.356 Winchester</option>
+                                                                <option value=".357 Magnum">.357 Magnum</option>
+                                                                <option value=".357 Magnum (Rifle Data)">.357 Magnum
+                                                                    (Rifle Data)</option>
+                                                                <option value=".357 SIG">.357 SIG</option>
+                                                                <option value=".375 A-Square">.375 A-Square</option>
+                                                                <option value=".375 Dakota">.375 Dakota</option>
+                                                                <option value=".375 Holland &amp; Holland Magnum">.375
+                                                                    Holland &amp; Holland Magnum</option>
+                                                                <option value=".375 Remington Ultra Magnum">.375
+                                                                    Remington Ultra Magnum</option>
+                                                                <option value=".375 Ruger">.375 Ruger</option>
+                                                                <option value=".375 Weatherby Magnum">.375 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".375 Winchester">.375 Winchester</option>
+                                                                <option value=".378 Weatherby Magnum">.378 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".38 Short Colt">.38 Short Colt</option>
+                                                                <option value=".38 Smith &amp; Wesson">.38 Smith &amp;
+                                                                    Wesson</option>
+                                                                <option
+                                                                    value=".38 Special (.38 Smith &amp; Wesson Special)">
+                                                                    .38 Special (.38 Smith &amp; Wesson Special)
+                                                                </option>
+                                                                <option value=".38 Super Auto Colt">.38 Super Auto Colt
+                                                                </option>
+                                                                <option value=".38-40 Winchester">.38-40 Winchester
+                                                                </option>
+                                                                <option value=".38-55 Winchester">.38-55 Winchester
+                                                                </option>
+                                                                <option value=".380 Auto (9mm Browning Short)">.380 Auto
+                                                                    (9mm Browning Short)</option>
+                                                                <option value=".40 Smith &amp; Wesson">.40 Smith &amp;
+                                                                    Wesson</option>
+                                                                <option value=".400 A-Square Dual Purpose Magnum (DPM)">
+                                                                    .400 A-Square Dual Purpose Magnum (DPM)</option>
+                                                                <option value=".404 Dakota">.404 Dakota</option>
+                                                                <option value=".405 Winchester">.405 Winchester</option>
+                                                                <option value=".41 Remington Magnum">.41 Remington
+                                                                    Magnum</option>
+                                                                <option value=".416 Dakota">.416 Dakota</option>
+                                                                <option value=".416 Remington Magnum">.416 Remington
+                                                                    Magnum</option>
+                                                                <option value=".416 Rigby">.416 Rigby</option>
+                                                                <option value=".416 Weatherby Magnum">.416 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".44 Colt">.44 Colt</option>
+                                                                <option value=".44 Remington Magnum (Pistol Data)">.44
+                                                                    Remington Magnum (Pistol Data)</option>
+                                                                <option value=".44 Remington Magnum (Rifle Data)">.44
+                                                                    Remington Magnum (Rifle Data)</option>
+                                                                <option value=".44 Smith &amp; Wesson Special">.44 Smith
+                                                                    &amp; Wesson Special</option>
+                                                                <option value=".44-40 Winchester">.44-40 Winchester
+                                                                </option>
+                                                                <option value=".444 Marlin">.444 Marlin</option>
+                                                                <option value=".45 Auto (.45 ACP)">.45 Auto (.45 ACP)
+                                                                </option>
+                                                                <option value=".45 Colt (.45 Long Colt)">.45 Colt (.45
+                                                                    Long Colt)</option>
+                                                                <option value=".45 GAP (Glock Automatic Pistol)">.45 GAP
+                                                                    (Glock Automatic Pistol)</option>
+                                                                <option value=".45 Smith &amp; Wesson Schofield">.45
+                                                                    Smith &amp; Wesson Schofield</option>
+                                                                <option value=".45 Winchester Magnum">.45 Winchester
+                                                                    Magnum</option>
+                                                                <option value=".45-70 Government">.45-70 Government
+                                                                </option>
+                                                                <option value=".450 Dakota">.450 Dakota</option>
+                                                                <option value=".450 Marlin">.450 Marlin</option>
+                                                                <option value=".454 Casull">.454 Casull</option>
+                                                                <option value=".458 Lott">.458 Lott</option>
+                                                                <option value=".458 Winchester Magnum">.458 Winchester
+                                                                    Magnum</option>
+                                                                <option value=".460 Smith &amp; Wesson">.460 Smith &amp;
+                                                                    Wesson</option>
+                                                                <option value=".460 Weatherby Magnum">.460 Weatherby
+                                                                    Magnum</option>
+                                                                <option value=".470 Nitro Express">.470 Nitro Express
+                                                                </option>
+                                                                <option value=".475 Linebaugh">.475 Linebaugh</option>
+                                                                <option value=".475 Nitro Express Number 2">.475 Nitro
+                                                                    Express Number 2</option>
+                                                                <option value=".480 Ruger">.480 Ruger</option>
+                                                                <option value=".495 A-Square">.495 A-Square</option>
+                                                                <option value=".50 Action Express">.50 Action Express
+                                                                </option>
+                                                                <option value=".500 A-Square">.500 A-Square</option>
+                                                                <option value=".500 Jeffery">.500 Jeffery</option>
+                                                                <option value=".500 Nitro Express 3-Inch">.500 Nitro
+                                                                    Express 3-Inch</option>
+                                                                <option value=".500 Smith &amp; Wesson Special">.500
+                                                                    Smith &amp; Wesson Special</option>
+                                                                <option value=".500 Smith &amp; Wesson Special Magnum">
+                                                                    .500 Smith &amp; Wesson Special Magnum</option>
+                                                                <option value=".500-465 Nitro Express">.500-465 Nitro
+                                                                    Express</option>
+                                                                <option value=".505 Rimless Magnum (Gibbs)">.505 Rimless
+                                                                    Magnum (Gibbs)</option>
+                                                                <option value=".577 Nitro Express 3-Inch">.577 Nitro
+                                                                    Express 3-Inch</option>
+                                                                <option value=".577 Tyrannosaur">.577 Tyrannosaur
+                                                                </option>
+                                                                <option value=".600 Nitro Express">.600 Nitro Express
+                                                                </option>
+                                                                <option value=".700 Nitro Express">.700 Nitro Express
+                                                                </option>
+                                                                <option value="10.57mm (.416) Lazzeroni Meteor">10.57mm
+                                                                    (.416) Lazzeroni Meteor</option>
+                                                                <option value="10mm Auto">10mm Auto</option>
+                                                                <option value="5mm Remington Rimfire Magnum">5mm
+                                                                    Remington Rimfire Magnum</option>
+                                                                <option value="6.17mm (.243) Lazzeroni Spitfire">6.17mm
+                                                                    (.243) Lazzeroni Spitfire</option>
+                                                                <option value="6.5 Mannlicher-Schoenauer">6.5
+                                                                    Mannlicher-Schoenauer</option>
+                                                                <option value="6.53mm (.257) Lazzeroni Scramjet">6.53mm
+                                                                    (.257) Lazzeroni Scramjet</option>
+                                                                <option value="6.5mm Remington Magnum">6.5mm Remington
+                                                                    Magnum</option>
+                                                                <option value="6.5x55mm Swedish Mauser">6.5x55mm Swedish
+                                                                    Mauser</option>
+                                                                <option value="6.5x57 Mauser">6.5x57 Mauser</option>
+                                                                <option value="6.71mm (.264) Lazzeroni Phantom">6.71mm
+                                                                    (.264) Lazzeroni Phantom</option>
+                                                                <option value="6.8mm Remington SPC">6.8mm Remington SPC
+                                                                </option>
+                                                                <option value="6mm Remington">6mm Remington</option>
+                                                                <option value="7-30 Waters">7-30 Waters</option>
+                                                                <option value="7.21mm (.284) Lazzeroni Firebird">7.21mm
+                                                                    (.284) Lazzeroni Firebird</option>
+                                                                <option value="7.62x39mm Russian">7.62x39mm Russian
+                                                                </option>
+                                                                <option value="7.82mm (.308) Lazzeroni Patriot">7.82mm
+                                                                    (.308) Lazzeroni Patriot</option>
+                                                                <option value="7.82mm (.308) Lazzeroni Warbird">7.82mm
+                                                                    (.308) Lazzeroni Warbird</option>
+                                                                <option value="7mm Dakota">7mm Dakota</option>
+                                                                <option value="7mm Remington Magnum">7mm Remington
+                                                                    Magnum</option>
+                                                                <option value="7mm Remington Short Action Ultra Magnum">
+                                                                    7mm Remington Short Action Ultra Magnum</option>
+                                                                <option value="7mm Remington Ultra Magnum">7mm Remington
+                                                                    Ultra Magnum</option>
+                                                                <option value="7mm STW (Shooting Times Westerner)">7mm
+                                                                    STW (Shooting Times Westerner)</option>
+                                                                <option value="7mm Weatherby Magnum">7mm Weatherby
+                                                                    Magnum</option>
+                                                                <option value="7mm Winchester Short Magnum (WSM)">7mm
+                                                                    Winchester Short Magnum (WSM)</option>
+                                                                <option value="7mm-08 Remington">7mm-08 Remington
+                                                                </option>
+                                                                <option value="7x57mm Mauser">7x57mm Mauser</option>
+                                                                <option value="7x64mm Brenneke">7x64mm Brenneke</option>
+                                                                <option value="8.59mm (.338) Lazzeroni Titan">8.59mm
+                                                                    (.338) Lazzeroni Titan</option>
+                                                                <option value="8mm Remington Magnum">8mm Remington
+                                                                    Magnum</option>
+                                                                <option value="8x57mm Mauser JS">8x57mm Mauser JS
+                                                                </option>
+                                                                <option value="9.3x74R">9.3x74R</option>
+                                                                <option value="9mm Largo (9x23mm)">9mm Largo (9x23mm)
+                                                                </option>
+                                                                <option value="9mm Luger (9mm Parabellum) (9x19mm)">9mm
+                                                                    Luger (9mm Parabellum) (9x19mm)</option>
+                                                                <option value="9mm Makarov (9x18mm)">9mm Makarov
+                                                                    (9x18mm)</option>
+                                                                <option value="9x23mm Winchester">9x23mm Winchester
+                                                                </option>
+                                                            </select></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bullet name</td>
+                                                        <td><select name="sel_name2" id="sel_name2"
+                                                                onchange="change_name(2)" style="width:200px;">
+                                                                <option value="2066">Aguila Jacketed Soft Point, 20gr
+                                                                </option>
+                                                            </select></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ballistic coefficient</td>
+                                                        <td><input type="text" name="txt_bc2" value="" maxlength="10"
+                                                                size="10" id="txt_bc2"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Initial velocity <em>(feets per second)</em></td>
+                                                        <td><input type="text" name="txt_mv2" value="" maxlength="10"
+                                                                size="10" id="txt_mv2"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bullet weight <em>(grans)</em></td>
+                                                        <td><input type="text" name="txt_weight2" value=""
+                                                                maxlength="10" size="10" id="txt_weight2"
+                                                                onkeyup="try_calc_bc(2)"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div id="div_show_next_bullet" onclick="show_next_bullet_input()"
+                                            class="show-more-bullets">Compare 2 bullets...</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <div onclick="toggle_advanced_options()" class="show-more-bullets">Advanced options...</div>
+                        <br>
+                        <div id="div_advanced" style="display: block;">
+                            <table border="0" cellpadding="0" cellspacing="0"
+                                style="border:1px solid #CCC; border-radius:15px; -moz-border-radius:15px;"
+                                class="left-align" width="100%">
+                                <tbody>
+                                    <tr>
+                                        <td>Zero range <em>(yards)</em></td>
+                                        <td><input type="text" name="txt_zero_range" value="100" maxlength="5" size="5">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shooting angle <em>(0..89)</em></td>
+                                        <td><input type="text" name="txt_angle" value="0" maxlength="5" size="5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sight height over bore <em>(inches)</em></td>
+                                        <td><input type="text" name="txt_sh" value="1.5" maxlength="10" size="10"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wind velocity <em>(miles per hour)</em></td>
+                                        <td><input type="text" name="txt_v_wind" value="0" maxlength="5" size="5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wind angle <em>(0..360)</em></td>
+                                        <td><input type="text" name="txt_a_wind" value="0" maxlength="5" size="5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><em>0 means tail wind, while 90 is left hand crosswind</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Drag function</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><select name="sel_drag_function">
+                                                <option value="G1" selected="selected">G1 | Ingalls (by far the most
+                                                    popular)</option>
+                                                <option value="G2">G2 | Aberdeen J projectile</option>
+                                                <option value="G5">G5 | short 7.5° boat-tail, 6.19 calibers long tangent
+                                                    ogive</option>
+                                                <option value="G6">G6 | flatbase, 6 calibers long secant ogive</option>
+                                                <option value="G7">G7 | long 7.5° boat-tail, 10 calibers tangent ogive,
+                                                    for very-low-drag bullets</option>
+                                                <option value="G8">G8 | flatbase, 10 calibers long secant ogive</option>
+                                            </select></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Distance to show <em>(yards)</em></td>
+                                        <td><input type="text" name="txt_distance" value="500" maxlength="10" size="10">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Distance step <em>(yards)</em></td>
+                                        <td><input type="text" name="txt_step" value="60" maxlength="5" size="5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><input type="checkbox" name="cb_atm" onclick="toggle_atm()"
+                                                value="1">
+                                            Enable atmospheric corrections</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Temperature <em>(F)</em></td>
+                                        <td><input type="text" name="txt_temp" value="59" maxlength="5" size="5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Altitude <em>(ft)</em></td>
+                                        <td><input type="text" name="txt_alt" value="0" maxlength="5" size="5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Atmospheric pressure <em>(Hg)</em></td>
+                                        <td><input type="text" name="txt_pressure" value="29.53" maxlength="5" size="5">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Relative humidity <em>(%)</em></td>
+                                        <td><input type="text" name="txt_humidity" value="78" maxlength="5" size="5">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">&nbsp;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br>
+                        <input type="submit" name="btn_submit" value="Calculate" style="width:100px;">
+                        <input type="hidden" name="action" value="calculate">
+                        <input type="hidden" name="bullets" value="1" id="bullets">
+                    </form>
+
+                    <br>
+                
+                    <h3><a href="http://gundata.org/ballistic-calculator/" title="Reset &amp; Try Again">Reset &amp; Try
+                            Again</a></h3>
+                    <h3>Related</h3>
+                    <ul>
+                        <li><a href="http://gundata.org/bullet-database/compare-rifle-ammo/"
+                                title="Compare Rifle Ammo">Compare Rifle Ammo</a></li>
+                        <li><a href="http://gundata.org/bullet-database/compare-handgun-ammo/"
+                                title="Compare Handgun Ammo">Compare Handgun Ammo</a></li>
+                        <li><a href="http://gundata.org/bullet-database/" title="Bullet Database">Bullet Database</a>
+                        </li>
+                        <li><a href="http://gundata.org/blog/post/how-to-sight-in-scope/"
+                                title="How to Sight in a Scope">How to Sight in a Scope</a></li>
+                        <li><a href="http://gundata.org/blog/post/outdoor-vs-indoor-ranges/"
+                                title="Outdoor vs Indoor Ranges">Outdoor vs Indoor Ranges</a></li>
+                        <li><a href="http://gundata.org/ballistic-calculator/"
+                                title="Ballistic Trajectory Calculator">Ballistic Trajectory Calculator</a></li>
+                        <li><a href="http://gundata.org/ballistic-coefficient-calculator/"
+                                title="Ballistic Coefficient Calculator">Ballistic Coefficient Calculator</a></li>
+                        <li><a href="http://gundata.org/blog/post/9mm-ballistics-chart/"
+                                title="9mm Luger Ballistics Chart">9mm Ballistics Chart</a></li>
+                        <li><a href="http://gundata.org/blog/post/308-ballistics-chart/"
+                                title="308 Ballistics Chart">308 Ballistics Chart</a></li>
+                        <li><a href="http://gundata.org/blog/post/30-06-ballistics-chart/"
+                                title="30-06 Ballistics Chart">30-06 Ballistics Chart</a></li>
+                        <li><a href="http://gundata.org/blog/post/30-30-ballistics-chart/"
+                                title="30-30 Ballistics Chart">30-30 Ballistics Chart</a></li>
+                        <li><a href="http://gundata.org/blog/post/7.62x39mm-ballistics-chart/"
+                                title="7.62x39mm Ballistics Chart">7.62x39mm Ballistics Chart</a></li>
+                        <li><a href="http://gundata.org/blog/post/17-hmr-ballistics-chart/"
+                                title="17 HMR Ballistics Chart">17 HMR Ballistics Chart</a></li>
+                        <li><a href="http://gundata.org/blog/post/223-ballistics-chart/"
+                                title=".223 Ballistics Chart">223 Ballistics Chart</a></li>
+                        <li><a href="http://gundata.org/blog/post/22-250-ballistics-chart/"
+                                title="22-250 Ballistics Chart">22-250 Ballistics Chart</a></li>
+                        <li><a href="http://gundata.org/blog/post/convert-fps-to-mph/"
+                                title="Convert FPS to MPH">Convert FPS to MPH</a></li>
+                    </ul>
+                </div>
+                <div class="clr"></div>
+                <p>Thanks to <a href="http://www.flickr.com/photos/amagill/1025919868/sizes/s/in/photostream/"
+                        title="amagill">amagill</a> for use of the photo.</p>
+
+            </div>
+
+            <div class="sidebar">
+                <div class="searchform" style="border-radius: 6px;">
+                    <form id="formsearch" name="formsearch" method="post" action="javascript: mySearch();">
+                        <div>
+                            <input type="hidden" name="form_name" value="gun_search_form">
+                            <input type="hidden" name="code" value="3102280cb51f03d7eb567072336e0c3d119234044037">
+                        </div>
+                        <span><input onkeyup="get_suggestions()" onblur="hideSuggest();" autocomplete="off" name="q"
+                                class="editbox_search default" id="editbox_search" maxlength="80"
+                                value="Search Gun Database..." text="Search Gun Database..." type="text"></span>
+                        <input name="button_search" src="http://gundata.org/images/search.gif" class="button_search"
+                            type="image">
+                        <div id="suggestions">
+                            <ul class="small">
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+                <div class="clr"></div>
+                <div class="gadget">
+
+
+                    <h2 class="star" style="border-radius: 6px;"><span>Main</span> Menu</h2>
+                    <div class="clr"></div>
+                    <ul class="sb_menu">
+                        <li><a href="http://gundata.org/" title="Home">Home</a></li>
+                        <li><a href="http://gundata.org/blog/post/articles/" title="Articles">Articles</a></li>
+                        <li><a href="http://gundata.org/h/category/pistols/" title="Pistols">Pistol Wiki</a></li>
+                        <li><a href="http://gundata.org/h/category/rifles/" title="Rifles">Rifle Wiki</a></li>
+                        <li><a href="http://gundata.org/h/category/shotguns/" title="Shotguns">Shotgun Wiki</a></li>
+                        <li><a href="http://gundata.org/bullet-database/" title="Bullet Database">Bullet Wiki</a></li>
+                        <li><a href="http://eepurl.com/n0tVL" title="Join Mailing List!" target="_blank">Join Mailing
+                                List!</a></li>
+                        <li><a href="http://gundata.org/ballistic-calculator/" title="Ballistic Calculator">Ballistic
+                                Calculator</a></li>
+                        <li><a href="https://buysellads.com/buy/detail/166825/" rel="nofollow"
+                                target="_blank">Advertise</a></li>
+                        <li>
+                            <div id="bsap_1296526" class="bsap bsap_1296526" data-serve="CYSDPKE">
+                                <style type="text/css">
+                                    div.bsap_1296526 {
+                                        width: 100%;
+                                        display: block;
+                                    }
+
+                                    div.bsap_1296526 a {
+                                        width: 200px;
+                                    }
+
+                                    div.bsap_1296526 a img {
+                                        padding: 0;
+                                    }
+
+                                    div.bsap_1296526 a em {
+                                        font-style: normal;
+                                    }
+
+                                    div.bsap_1296526 a {
+                                        display: block;
+                                        font-size: 11px;
+                                        color: #888;
+                                        font-family: verdana, sans-serif;
+                                        margin: 0;
+                                        text-align: center;
+                                        text-decoration: none;
+                                        overflow: hidden;
+                                    }
+
+                                    div.bsap_1296526 img {
+                                        border: 0;
+                                        clear: right;
+                                    }
+
+                                    div.bsap_1296526 a.adhere {
+                                        color: #666;
+                                        font-weight: bold;
+                                        font-size: 12px;
+                                        border: 1px solid #ccc;
+                                        background: #e7e7e7;
+                                        text-align: center;
+                                    }
+
+                                    div.bsap_1296526 a.adhere:hover {
+                                        border: 1px solid #999;
+                                        background: #ddd;
+                                        color: #333;
+                                    }
+
+                                    div.bsap_1296526 iframe {
+                                        display: block;
+                                        font-size: 11px;
+                                        color: #888;
+                                        font-family: verdana, sans-serif;
+                                        margin: 0;
+                                        text-align: center;
+                                        text-decoration: none;
+                                        overflow: hidden;
+                                        float: left;
+                                    }
+
+                                    div.bsap_1296526 a {
+                                        line-height: 100%;
+                                    }
+
+                                    div.bsap_1296526 a.adhere {
+                                        width: 200px;
+                                        height: 200px;
+                                        line-height: 1600%;
+                                    }
+
+                                    html>body div.bsap_1296526 a.adhere {
+                                        width: 198px;
+                                        height: 198px;
+                                    }
+
+                                    div.bsap_1296526 img.s {
+                                        height: 0;
+                                        width: 0;
+                                    }
+
+                                    div.bsap_1296526 {
+                                        line-height: 9px;
+                                    }
+
+                                    div.bsap_1296526 .bsap_adhere a {
+                                        height: 19px !important;
+                                        width: 198px !important;
+                                        font-size: 10px;
+                                        background: #f1f1f1;
+                                        border: 1px solid #e1e1e1;
+                                        border-top: none;
+                                        border-radius: 0 0 2px 2px;
+                                        line-height: 16px;
+                                    }
+
+                                    .bsap_backfillframe {
+                                        border: 0;
+                                    }
+
+                                    .bsap_1296526 .ads-via {
+                                        display: block;
+                                    }
+
+                                    .bsap_1296526 .adhere:nth-of-type(1n+1) {
+                                        display: none;
+                                    }
+
+                                    .bsap_1296526 .adhere:nth-of-type(1) {
+                                        display: block;
+                                    }
+                                </style>
+
+                                <a href="//srv.buysellads.com/ads/click/x/GTND42JICK7IC5QUCEY4YKQNCK7IV2Q7FTBIEZ3JCY7IC23ICK7DTK3KCYYDE23LCEADLK3NCVAD6K3WCKSD4KQKC6SDCK7ICEYIKK3EHJNCLSIZ"
+                                    class="ad0 odd " title="10% OFF STOREWIDE COUPON CODE: LIBERTY10" id="bsa_413234"
+                                    target="_blank" rel="nofollow">
+                                    <img src="https://cdn4.buysellads.net/uu/5/94000/1622452408-USA_Single_Paperweight_200.jpg"
+                                        width="200" height="200" alt="10% OFF STOREWIDE COUPON CODE: LIBERTY10">
+                                </a>
+
+                                <script type="text/javascript" id="auto_1"
+                                    class="ignoreme">if (typeof (_bsap_serving_callback) !== 'undefined') _bsap_serving_callback(413234, 'CYSDPKE', '');</script>
+
+                                <script type="text/javascript" id="auto_2"
+                                    class="ignoreme"> if (typeof (BSACallback) !== 'undefined') BSACallback(1296526);</script>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="clr"></div>
+                </div>
+
+                <div class="clr"></div>
+                <div class="gadget">
+
+                    <h2 class="star" style="border-radius: 6px;"><span>Original</span> Articles</h2>
+                    <div class="clr"></div>
+                    <ul class="sb_menu">
+                        <li><a href="http://gundata.org/blog/post/kel-tec-ksg-25-capacity-shotgun/">New 25+1 Capacity
+                                Shotgun!</a></li>
+                        <li><a href="http://gundata.org/blog/post/hudson-h9-american-made-9mm/">Hudson H9 American Made
+                                9mm</a></li>
+                        <li><a href="http://gundata.org/blog/post/how-to-build-a-mud-hut/">How To Build A Mud Hut</a>
+                        </li>
+                        <li><a href="http://gundata.org/blog/post/380-pistol-looks-like-cell-phone/">Pistol Looks Like
+                                Cell Phone</a></li>
+                        <li><a href="http://gundata.org/blog/post/45-acp-vs-9mm-luger/">45 ACP vs 9mm Luger</a></li>
+                        <li><a href="http://gundata.org/blog/post/best-9mm-carbines/">Best 9mm Carbines</a></li>
+                        <li><a href="http://gundata.org/blog/post/mall-ninja-extreme-ar15/">Mall Ninja Xtreme Zombie
+                                Carbine!</a></li>
+                        <li><a href="http://gundata.org/blog/post/5-alternative-range-bags-for-pistols/">5 Alternative
+                                Range Bags for Pistols</a></li>
+                        <li><a href="http://gundata.org/blog/post/best-45-acp-carbines/">Best 45 ACP Carbines</a></li>
+                        <li><a href="http://gundata.org/blog/post/5-dirt-cheap-guns-under-300/">5 Dirt Cheap Guns $170
+                                to $260</a></li>
+                        <li><a href="http://gundata.org/blog/post/anti-muslim-shooting-range/">Muslim Free Shooting
+                                Range?</a></li>
+                        <li><a href="http://gundata.org/blog/post/how-to-clean-a-rifle/">How To Clean A Rifle</a></li>
+                        <li><a href="http://gundata.org/blog/post/300-ac-black-reviews/">3 Good 300 AAC Blackout
+                                Reviews</a></li>
+                        <li><a href="http://gundata.org/blog/post/top-5-guns-for-women/">Top 5 Guns for Women</a></li>
+                        <li><a href="http://gundata.org/blog/post/how-to-shoot-a-pistol/">How to Really Shoot A
+                                Pistol</a></li>
+                        <li><a href="http://gundata.org/blog/post/worlds-best-handgun-glock-19/">Worlds Best 9mm
+                                Handgun</a></li>
+                        <li><a href="http://gundata.org/blog/post/5-great-gun-safes/">5 Great Gun Safes (Options)</a>
+                        </li>
+                        <li><a href="http://gundata.org/blog/post/9mm-vs-40-smith-and-wesson/">9mm vs 40 S&amp;W Summary
+                                + Ballistics</a></li>
+                        <li><a href="http://gundata.org/blog/post/red-oak-white-oak-or-chestnut-for-deer-mast-crop/">Red
+                                Oak, White, or Chestnut for Deer Herd?</a></li>
+                        <li><a href="http://gundata.org/blog/post/bullets-for-barter-post-collapse/">Bullets for Barter
+                                Post Collapse</a></li>
+                        <li><a href="http://gundata.org/blog/post/funny-pro-gun-sayings/">Funny Pro Gun Sayings</a></li>
+                        <li><a href="http://gundata.org/blog/post/5-strange-handguns/">5 Strange Handguns You Don't
+                                Need</a></li>
+                        <li><a href="http://gundata.org/blog/post/survival-rifles/">3 Great .22LR / 410 Survival
+                                Rifles</a></li>
+                        <li><a href="http://gundata.org/blog/post/american-rifles-1/">American Rifles | The Original
+                                ARs</a></li>
+                        <li><a href="http://gundata.org/blog/post/600-round-glock-magazine/">600 Round Glock
+                                Magazine</a></li>
+                        <li><a href="http://gundata.org/blog/post/10mm-vs-40-summary-and-ballistics/">10mm vs 40 Summary
+                                and Ballistics</a></li>
+                        <li><a href="http://gundata.org/blog/post/how-important-is-shot-placement/">How Important is
+                                "Shot Placement"?</a></li>
+                        <li><a href="http://gundata.org/blog/post/first-aid-kit-items-checklist/">10 Item First Aid Kit
+                                Checklist</a></li>
+                        <li><a href="http://gundata.org/blog/post/10-gun-mounted-flashlights-for-home-defense/">10 Gun
+                                Lights for Home Defense</a></li>
+                        <li><a href="http://gundata.org/blog/post/how-to-make-a-hobo-stove/">How to Make a Stove Hobo
+                                Style!</a></li>
+                        <li><a href="http://gundata.org/blog/post/the-most-basic-survival-food-list-ever/">Most Basic
+                                Survival Food List Ever</a></li>
+                        <li><a href="http://gundata.org/blog/post/best-handguns-for-women/">Best Handguns for Women</a>
+                        </li>
+                        <li><a href="http://gundata.org/blog/post/how-to-make-homemade-mosquito-trap/">Make Homemade
+                                Mosquito Trap</a></li>
+                        <li><a href="http://gundata.org/blog/post/lets-make-a-sawed-off-shotgun/">Lets make a Sawed-Off
+                                Shotgun!</a></li>
+                        <li><a href="http://gundata.org/blog/post/man-brings-knife-to-gunfight/">Man Brings Knife to Gun
+                                Fight (Funny)</a></li>
+                        <li><a href="http://gundata.org/blog/post/proper-gun-shop-etiquette/">Gun Store Etiquette
+                                (Proper vs Improper)</a></li>
+                        <li><a href="http://gundata.org/blog/post/10-simple-home-security-tips/">10 Simple Home Security
+                                Tips</a></li>
+                        <li><a href="http://gundata.org/blog/post/sig-sauer-vs-glock/">SIG-Sauer vs Glock</a></li>
+                        <li><a href="http://gundata.org/blog/post/legal-barrel-length-of-hotguns-and-rifles/">Legal
+                                Length of Shotguns and Rifles</a></li>
+                        <li><a href="http://gundata.org/blog/post/9mm-pocket-pistols/">9mm Pocket Pistols</a></li>
+                        <li><a href="http://gundata.org/blog/post/glock-17-19-26-operating-procedures/">Glock 17/19/26
+                                Operating Procedures</a></li>
+                        <li><a href="http://gundata.org/blog/post/10-conceal-carry-tips/">10 Conceal Carry Tips
+                                (Funny)</a></li>
+                        <li><a href="http://gundata.org/blog/post/understanding-the-second-amendment/">Understanding the
+                                2nd Amendment</a></li>
+                        <li><a href="http://gundata.org/blog/post/choose-your-crime-stats/">Choose Your Own Crime
+                                Stats</a></li>
+                        <li><a href="http://gundata.org/blog/post/after-you-call-911/">After You Dial 911 : Dont Be A
+                                Victim</a></li>
+                        <li><a href="http://gundata.org/blog/post/does-gun-control-work-1/">Does Gun Control Work?</a>
+                        </li>
+                        <li><a href="http://gundata.org/blog/post/best-shotgun-ammo-for-self-defense-and-why/">Best
+                                Shotgun Ammo for Self Defense</a></li>
+                        <li><a href="http://gundata.org/blog/post/best-handgun-caliber-and-round-for-self-defense/">Best
+                                Calibers for Self Defense</a></li>
+                        <li><a href="http://gundata.org/blog/post/fbi-handgun-ballistics/">FBI Handgun Ballistics</a>
+                        </li>
+                        <li><a href="http://gundata.org/blog/post/38-special-vs-380-acp/">38 Special vs 380 ACP</a></li>
+                        <li><a href="http://gundata.org/blog/post/5-best-home-defense-handguns/">Top 5 Home Defense
+                                Handguns</a></li>
+                        <li><a href="http://gundata.org/blog/post/best-home-defense-shotgun/">5 Best Home Defense
+                                Shotguns</a></li>
+                        <li><a href="http://gundata.org/blog/post/how-to-sight-in-scope/">How to Sight in a Scope - Step
+                                by Step Guide</a></li>
+                        <li><a href="http://gundata.org/blog/post/proof-of-380-stopping-power/">.380 ACPs Stopping Power
+                                (Funny)</a></li>
+                        <li><a href="http://gundata.org/blog/post/ak-47-vs-ar-15-history-and-facts/">AK-47 vs AR-15
+                                History and Facts</a></li>
+                        <li><a href="http://gundata.org/blog/post/bug-out-bag-checklist/">A Bug Out Bag Checklist for
+                                2015</a></li>
+                        <li><a href="http://gundata.org/blog/post/30-06-vs-270/">30-06 vs. 270 Win</a></li>
+                        <li><a href="http://gundata.org/gun-stores/" title="Gun Stores">Gun Stores</a></li>
+                    </ul>
+                    <!-- Begin MailChimp Signup Form -->
+                    <div id="mc_embed_signup">
+                        <form
+                            action="http://soundbible.us1.list-manage2.com/subscribe/post?u=edbea9e35b6236cca34909e97&amp;id=4e19227a27"
+                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                            class="validate" target="_blank" novalidate="">
+                            <label for="mce-EMAIL"><strong>Join Our Mailing List</strong></label>
+                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                                placeholder="email address" required="">
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
+                                    id="mc-embedded-subscribe" class="button"></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="gadget">
+                    <h2 class="star" style="border-radius: 6px;"><span>Ballistics</span> Tools &amp; Data</h2>
+                    <div class="clr"></div>
+                    <ul class="sb_menu">
+                        <li><a href="http://gundata.org/ballistic-calculator/"
+                                title="Ballistic Trajectory Calculator">Ballistic Trajectory Calculator</a></li>
+                        <li><a href="http://gundata.org/ballistic-coefficient-calculator/"
+                                title="Ballistic Coefficient Calculator">Ballistic Coefficient Calculator</a></li>
+                        <li><a href="http://gundata.org/blog/post/9mm-ballistics-chart/"
+                                title="9mm Luger Ballistics Chart">9mm Ballistics Chart</a></li>
+                        <li><a href="http://gundata.org/blog/post/308-ballistics-chart/"
+                                title="308 Ballistics Chart">308 Ballistics Chart</a></li>
+                        <li><a href="http://gundata.org/blog/post/30-06-ballistics-chart/"
+                                title="30-06 Ballistics Chart">30-06 Ballistics Chart</a></li>
+                        <li><a href="http://gundata.org/blog/post/270-win-ballistics-chart/"
+                                title=".270 Win Ballistics Chart">.270 Win Ballistics Chart</a></li>
+                        <li><a href="http://gundata.org/blog/post/30-30-ballistics-chart/"
+                                title="30-30 Ballistics Chart">30-30 Ballistics Chart</a></li>
+                        <li><a href="http://gundata.org/blog/post/7.62x39mm-ballistics-chart/"
+                                title="7.62x39mm Ballistics Chart">7.62x39mm Ballistics Chart</a></li>
+                        <li><a href="http://gundata.org/blog/post/7mm-rem-mag-ballistics-chart/"
+                                title="7mm Rem Magnum Ballistics Chart">7mm Rem Magnum Ballistics Chart</a></li>
+                        <li><a href="http://gundata.org/blog/post/17-hmr-ballistics-chart/"
+                                title="17 HMR Ballistics Chart">17 HMR Ballistics Chart</a></li>
+                        <li><a href="http://gundata.org/blog/post/223-ballistics-chart/"
+                                title=".223 Ballistics Chart">223 Ballistics Chart</a></li>
+                        <li><a href="http://gundata.org/blog/post/243-ballistics-chart/"
+                                title=".243 Ballistics Chart">.243 Ballistics Chart</a></li>
+                        <li><a href="http://gundata.org/blog/post/22-250-ballistics-chart/"
+                                title="22-250 Ballistics Chart">22-250 Ballistics Chart</a></li>
+                        <li><a href="http://gundata.org/blog/post/convert-fps-to-mph/"
+                                title="Convert FPS to MPH">Convert FPS to MPH</a></li>
+                    </ul>
+                </div>
+                <div class="gadget">
+                    <h2 class="star" style="border-radius: 6px;"><span>Bullet Database</span></h2>
+                    <div class="clr"></div>
+                    <ul class="sb_menu">
+                        <li><a href="http://gundata.org/cartridge/40/7mm-08-remington/" title="7mm-08 Ballistics">7mm-08
+                                Ballistics</a></li>
+                        <li><a href="http://gundata.org/cartridge/148/10mm-auto/" title="10mm Ballistics">10mm
+                                Ballistics</a></li>
+                        <li><a href="http://gundata.org/cartridge/71/.32-winchester-special/"
+                                title="32 Winchester Special">32 Winchester Special</a></li>
+                        <li><a href="http://gundata.org/cartridge/2/.204-ruger/" title="204 Ruger">204 Ruger</a></li>
+                        <li><a href="http://gundata.org/cartridge/21/.250-savage/" title="250 Savage">250 Savage</a>
+                        </li>
+                        <li><a href="http://gundata.org/cartridge/135/.327-federal-magnum/"
+                                title=".327 Federal Magnum">.327 Federal Magnum</a></li>
+                        <li><a href="http://gundata.org/cartridge/4/.218-bee/" title=".218 Bee">.218 Bee</a></li>
+                        <li><a href="http://gundata.org/cartridge/103/.45-70-government/" title="45-70 Ballistics">45-70
+                                Ballistics</a></li>
+                        <li><a href="http://gundata.org/cartridge/1/.17-remington/" title="17 Remington">17
+                                Remington</a></li>
+                        <li><a href="http://gundata.org/cartridge/140/9mm-luger-(9mm-parabellum)-(9x19mm)/"
+                                title="9mm Parabellum">9mm Parabellum</a></li>
+                        <li><a href="http://gundata.org/cartridge/81/.338-lapua-magnum/"
+                                title="338 Lapua Ballistics">338 Lapua Ballistics</a></li>
+                        <li><a href="http://gundata.org/cartridge/149/.41-remington-magnum/" title="41 Magnum">41
+                                Magnum</a></li>
+                        <li><a href="http://gundata.org/cartridge/36/.270-winchester-short-magnum/" title="270 WSM">270
+                                WSM</a></li>
+                        <li><a href="http://gundata.org/cartridge/166/.17-mach-2/" title="17 Mach 2">17 Mach 2</a></li>
+                        <li><a href="http://gundata.org/cartridge/24/.25-06-remington/" title="25-06 Ballistics">25-06
+                                Ballistics</a></li>
+                        <li><a href="http://gundata.org/cartridge/154/.45-auto-(.45-acp)/" title="45 ACP Ballistics">45
+                                ACP Ballistics</a></li>
+                        <li><a href="http://gundata.org/cartridge/42/.284-winchester/" title="284 Winchester">284
+                                Winchester</a></li>
+                    </ul>
+                    <p>Complete <a href="http://gundata.org/bullet-database/" title="Bullet Database">Bullet
+                            Database</a></p>
+
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </div>
+    <div class="fbg">
+        <div class="fbg_resize">
+            <div class="col c1">
+                <!-- BuySellAds Zone Code -->
+                <div id="bsap_1282122" class="bsap bsap_1282122" data-serve="CYSDPKV">
+
+
+
+                    <div class="bsa_it one">
+                        <!-- no ad -->
+                        <!-- no ad -->
+                        <!-- no ad -->
+                        <span class="bsa_it_p">
+                            <a
+                                href="http://gundata.bsa-whitelabel.com/checkout/new/?utm_source=bottom-left-of-every-page&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=">ads
+                                by BSA</a>
+                        </span>
+                    </div>
+
+                    <script type="text/javascript" id="auto_3"
+                        class="ignoreme"> if (typeof (BSACallback) !== 'undefined') BSACallback(1282122);</script>
+                </div>
+                <!-- End BuySellAds Zone Code -->
+            </div>
+            <div class="col c2">
+
+                <!-- GunData Responsive -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8417283882784443"
+                    data-ad-slot="5273619243" data-ad-format="autorelaxed"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+            </div>
+            <div class="col c3">
+                <h2><span>Random</span> Guns Gallery</h2>
+                <a href="http://gundata.org/details/gun/27/pistols/smith-and-wesson-bodyguard-380/"
+                    title="Smith And Wesson Bodyguard 380"><img
+                        src="http://gundata.org/data/guns/Smith-And-Wesson-Bodyguard-380-b281f1fe41eee5ee0add6e3b638f0c16.jpg"
+                        width="75" height="75" alt="Smith And Wesson Bodyguard 380" class="gal"></a><a
+                    href="http://gundata.org/details/gun/205/pistols/colt-rail-gun-o1070rg/"
+                    title="Colt Rail Gun O1070RG"><img
+                        src="http://gundata.org/data/guns/Colt-Rail-Gun-O1070RG-204b19928262e8a13cbe6ca536671e22.jpg"
+                        width="75" height="75" alt="Colt Rail Gun O1070RG" class="gal"></a><a
+                    href="http://gundata.org/details/gun/239/rifles/colt-match-target-mt6700/"
+                    title="Colt Match Target MT6700"><img
+                        src="http://gundata.org/data/guns/Colt-Match-Target-MT6700-d1e4318c4da812b8b584882289c3d559.jpg"
+                        width="75" height="75" alt="Colt Match Target MT6700" class="gal"></a><a
+                    href="http://gundata.org/details/gun/68/shotguns/remington-870-express-turkey-waterfowl/"
+                    title="Remington 870 Express Turkey Waterfowl"><img
+                        src="http://gundata.org/data/guns/Remington-870-Express-Turkey-Waterfowl-cffc217d6b26db29755d159df1956516.jpg"
+                        width="75" height="75" alt="Remington 870 Express Turkey Waterfowl" class="gal"></a><a
+                    href="http://gundata.org/details/gun/109/rifles/remington-750-synthetic/"
+                    title="Remington 750 Synthetic"><img
+                        src="http://gundata.org/data/guns/Remington-750-Synthetic-adb01b4dad35af543d28adfba1586770.jpg"
+                        width="75" height="75" alt="Remington 750 Synthetic" class="gal"></a><a
+                    href="http://gundata.org/details/gun/126/rifles/remington-700-cdl-sf-limited-edition/"
+                    title="Remington 700 CDL SF Limited Edition"><img
+                        src="http://gundata.org/data/guns/Remington-700-CDL-SF-Limited-Edition-be0e535c9c89945462dcee23d0794434.jpg"
+                        width="75" height="75" alt="Remington 700 CDL SF Limited Edition" class="gal"></a><a
+                    href="http://gundata.org/details/gun/361/shotguns/beretta-a400-xtreme-unico/"
+                    title="Beretta A400 Xtreme Unico"><img
+                        src="http://gundata.org/data/guns/Beretta-A400-Xtreme-Unico-9150d267d2ef71bcdabf11881f7a50bd.jpg"
+                        width="75" height="75" alt="Beretta A400 Xtreme Unico" class="gal"></a><a
+                    href="http://gundata.org/details/gun/744/rifles/sig-sauer-m400-enhanced-fde/"
+                    title="Sig Sauer M400 Enhanced FDE"><img
+                        src="http://gundata.org/data/guns/Sig-Sauer-M400-Enhanced-FDE-1dd714b9972c1488ac9be31e33d94fbb.jpg"
+                        width="75" height="75" alt="Sig Sauer M400 Enhanced FDE" class="gal"></a><a
+                    href="http://gundata.org/details/gun/478/pistols/s/w-sd9-ve---low-capacity/"
+                    title="S&amp;W SD9 VE - Low Capacity"><img
+                        src="http://gundata.org/data/guns/S&amp;W-SD9-VE---Low-Capacity-e2c46a944cec237d9696629b2433c24c.jpg"
+                        width="75" height="75" alt="S&amp;W SD9 VE - Low Capacity" class="gal"></a>
+                <!-- a href="#"><img src="http://gundata.org/images/gal1.jpg" width="75" height="75" alt="pix" class="gal" /></a>
+            <a href="#"><img src="http://gundata.org/images/gal2.jpg" width="75" height="75" alt="pix" class="gal" /></a>
+            <a href="#"><img src="http://gundata.org/images/gal3.jpg" width="75" height="75" alt="pix" class="gal" /></a>
+            <a href="#"><img src="http://gundata.org/images/gal4.jpg" width="75" height="75" alt="pix" class="gal" /></a>
+            <a href="#"><img src="http://gundata.org/images/gal5.jpg" width="75" height="75" alt="pix" class="gal" /></a>
+            <a href="#"><img src="http://gundata.org/images/gal6.jpg" width="75" height="75" alt="pix" class="gal" /></a -->
+
+            </div>
+            <div class="clr"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_resize">
+            <p class="lf">© Copyright <a href="#">GunData.org</a> 2015 &nbsp;|&nbsp; <a
+                    href="http://koenigmediallc.com/" title="Koenig Media">Koenig Media, LLC</a> &nbsp; | &nbsp; <a
+                    href="http://gundata.org/blog/post/external-resources/" title="External Resources">Links</a> &nbsp;
+                | &nbsp; <a href="http://gundata.org/sitemap.html" title="Sitemap">Sitemap</a> &nbsp; | &nbsp; <a
+                    href="https://buysellads.com/buy/detail/166825/" rel="nofollow" target="_blank">Advertise</a>
+            </p>
+            <div class="clr"></div>
+        </div>
+    </div>
+
+
+    <div id="fb-root"></div>
+    <div id="stcpDiv" style="position: absolute; top: -1999px; left: -1988px;">ShareThis Copy and Paste</div><iframe
+        src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe>
+    <div id="stwrapper" class="stwrapper stwrapper5x" style="display: none;"><iframe allowtransparency="true"
+            id="stLframe" class="stLframe" name="stLframe" frameborder="0" scrolling="no"
+            src="https://ws.sharethis.com/secure5x/index.html"></iframe></div>
+    <div id="stOverlay" onclick="javascript:stWidget.closeWidget();"></div>
+</body>
+
+</html>
